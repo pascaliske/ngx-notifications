@@ -1,0 +1,14 @@
+{
+  "name": "@pascaliske/ngx-notifications",
+  "version": "0.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "uuid": "^3.3.2"
+  },
+  "peerDependencies": {
+    "@angular/common": "^6.1.2",
+    "@angular/core": "^6.1.2"
+  }
+}
