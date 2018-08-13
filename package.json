@@ -1,7 +1,7 @@
 {
   "name": "ngx-notifications",
   "description": "Notification module for Angular v6+.",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "author": {
     "name": "Pascal Iske",
