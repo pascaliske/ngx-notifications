@@ -19,7 +19,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve ngx-notifications-demo",
-    "build": "ng build --prod",
+    "build": "ng build",
     "postbuild": "cp README.md dist/ngx-notifications/README.md && cp LICENSE.md dist/ngx-notifications/LICENSE.md",
     "test": "ng test ngx-notifications",
     "lint": "ng lint ngx-notifications",
