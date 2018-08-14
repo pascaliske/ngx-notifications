@@ -61,7 +61,7 @@
     "@angular/language-service": "^6.1.2",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
-    "@types/node": "~10.5.8",
+    "@types/node": "~10.7.0",
     "@types/uuid": "^3.4.3",
     "codelyzer": "~4.4.3",
     "husky": "^0.14.3",

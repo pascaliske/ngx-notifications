@@ -1,6 +1,6 @@
 # `@pascaliske/ngx-notifications`
 
-[![Build Status](https://travis-ci.com/pascaliske/ngx-notifications.svg?branch=master)](https://travis-ci.com/pascaliske/ngx-notifications)
+[![Build Status](https://travis-ci.com/pascaliske/ngx-notifications.svg?branch=master)](https://travis-ci.com/pascaliske/ngx-notifications) [![Greenkeeper badge](https://badges.greenkeeper.io/pascaliske/ngx-notifications.svg)](https://greenkeeper.io/)
 
 ## Installation
 
