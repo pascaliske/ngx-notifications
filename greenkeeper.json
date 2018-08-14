@@ -3,7 +3,6 @@
     "default": {
       "packages": [
         "package.json",
-        "projects/ngx-notifications/ng-package.json",
         "projects/ngx-notifications/package.json"
       ]
     }
