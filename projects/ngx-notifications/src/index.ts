@@ -4,5 +4,5 @@
 export * from './lib/notifications.service'
 export * from './lib/notifications.component'
 export * from './lib/notifications.module'
-export * from './lib/notification/notification'
+export * from './lib/notification'
 export { NotificationOptions } from './lib/typings'

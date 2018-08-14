@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core'
 import { NotificationsQueue } from './notifications.queue'
-import { Notification } from './notification/notification'
+import { Notification } from './notification'
 import { NotificationOptions } from './typings'
 
 @Injectable()

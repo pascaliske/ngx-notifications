@@ -7,8 +7,8 @@ install:
     - yarn install
 before_script: greenkeeper-lockfile-update
 script:
-    - yarn run build --prod
     - yarn run lint
+    - yarn run build --prod
 after_script: greenkeeper-lockfile-upload
 before_deploy:
     - cd dist/ngx-notifications
@@ -16,7 +16,7 @@ deploy:
     provider: npm
     email: info@pascal-iske.de
     api_key:
-        secure: rZJM4qi4RSLUH7nwJn9+vJhVxG6lkEeNL7KFEbadGnznJsloklSgObbnK31WQAdhgvv2fXlfxH7rKmlwfhVfoj6bVA9/W/S9SzplEs/zYiEM29O1QeWdJzXS8Ao9LaV+CMu/T/XmXZa6gmW1FP74nOzxyncnWmI6u+fxAFNbUFNKTo6cYfX3ixcEC/cX8X+HmJrJfFlgo2vXu+ouP5klFw0VAaz3tqUZRnMXbkKpWp8AH66f5IRxPpnjX9qaC3qs85QvGbn0+C16wp64cGy0ht/QRVF6QeKWV1UJkCo78vl2sQ30ny+3G/Uzk6BTXkIP6Sow89zhf2JekVPNlEdJ+XvoGIcEzutafY2IZq3ECbk17bobkO7akfy+XC0ww4EosdCstHwujgZpOdRKOtocoRW7YTaGmpsBPviaFsTEdX8PcbINwJwCCU4DiW2U69+4P8tIWh/boG/jeSzjH8uZbFD9TDVvGn/Ou34RinrwOUIOZEDpMjMEjy7sxS8nH5JTLOhU0j6JsleHBzdoY+s+ZMVxc2Qv3uKcDgal4NdzmTTCvK/O0/BqYkJUssohIuKKEqrzoEKeiJ+Y/fsXmH4hlZwHV93fPM8bI9HuKM3PzXhbtWjXf7UtOrBsKjLkQvH8X6hxl3KmFX2Mv9HzJ6Iq1e9CrQr2cmubkZXL7bZhpxU=
+        secure: nFB+u69/l1fCbMkiKpbwxCAO+0SlWMQTE9ghrcJ2QlZQwe0DeKqlnzJXt63Ef1uA4x9yg8/vDVzeLjBr6SU7vOZlw2eCkgvg3drHpq7TEYCz/5tLQ8h4II3AkBB/ITRr18cQ0r5vDsy17RkGlQ2IS6vYxuqZ9ov6Sjbn4JxAxMms44MFoAq0rvbczIsh5Q/ogqyPCXJcI56CYOuBn6nlSe6BSZviRyT5xPT1xJViGokA7PFzJPnAt+dg1a/U6fqnaJ1Gz6T6BVGJp7fQr0f4rr+YTWDiRutkGB6YzszOK70vB+2050AwdnupM51dR4Qrq5W+QxXkZkxGeaVMwFjRGofRY++q2r8yShQa1/N2/ntRqzHsTKUk2/nyEx2BL0PcgGJvCEVTQOkwaC+Hdh+QuD1Gv2gkFtxxigcRQosb9sw59QCB+/iq7NkO8kkeTW0DgPwo2zMj1r288Gh7q1taAgySQEtVVX6M22v5MYC0FVhu75F1K8gwSLQ/CMBICmTttPlvbTTCTSzoi48dPzcb8091uNo7M8pX4knE+jZl3jofwXYuonbrfXT9joe9r0jgeMkwrrk6tcIRpPcM/EwfTe6AP5prIqF9hKG0ewjqMXza4XCcsbl3h3SphCmv8hWl14ZT1ujyy6AQWV64Gw6dpKMQ1vJsu+V8eAirZGhkezg=
     skip_cleanup: true
     on:
         tags: true
