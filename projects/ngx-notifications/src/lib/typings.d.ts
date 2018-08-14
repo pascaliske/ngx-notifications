@@ -3,7 +3,7 @@
  */
 export interface NotificationOptions {
     timeout?: number
-    dismissOnClick?: boolean
+    clickable?: boolean
 }
 
 /**

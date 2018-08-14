@@ -1,5 +1,5 @@
-import { Notification } from './notification/notification'
 import { first } from 'rxjs/operators'
+import { Notification } from './notification'
 
 export class NotificationsQueue {
     /**
@@ -19,7 +19,7 @@ export class NotificationsQueue {
     public add(notification: Notification): Notification {
         this.items.push(notification)
 
-        notification.close$.pipe(first()).subscribe(() => {
+        notification.dismissed$.pipe(first()).subscribe(() => {
             this.remove(notification)
         })
 

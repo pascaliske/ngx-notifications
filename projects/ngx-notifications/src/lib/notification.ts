@@ -1,7 +1,7 @@
 import { Subject, Subscription, interval } from 'rxjs'
 import { first } from 'rxjs/operators'
 import { v4 } from 'uuid'
-import { NotificationType, NotificationOptions } from '../typings'
+import { NotificationType, NotificationOptions } from './typings'
 
 export class Notification {
     /**
@@ -37,7 +37,7 @@ export class Notification {
      *
      * @param close$
      */
-    public close$: Subject<void> = new Subject()
+    public dismissed$: Subject<void> = new Subject()
 
     /**
      * Dismissed state.
@@ -59,8 +59,8 @@ export class Notification {
      * @param defaults
      */
     private readonly defaults: NotificationOptions = {
-        timeout: 3000,
-        dismissOnClick: true,
+        timeout: 5000,
+        clickable: true,
     }
 
     /**
@@ -73,7 +73,10 @@ export class Notification {
     public constructor(type: NotificationType, message: string, options?: NotificationOptions) {
         this.type = type
         this.message = message
-        this.options = this.prepare(options)
+        this.options = {
+            ...this.defaults,
+            ...options,
+        }
 
         if (this.options.timeout > 0) {
             this.timeout = interval(this.options.timeout)
@@ -96,17 +99,8 @@ export class Notification {
             this.timeout.unsubscribe()
         }
 
-        this.close$.next()
-        this.close$.complete()
+        this.dismissed$.next()
+        this.dismissed$.complete()
         this.dismissed = true
-    }
-
-    /**
-     * Merges the given options with the defaults.
-     *
-     * @param options
-     */
-    private prepare(options: NotificationOptions = {}): NotificationOptions {
-        return { ...this.defaults, ...options }
     }
 }

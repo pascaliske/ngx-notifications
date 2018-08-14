@@ -7,17 +7,22 @@ import { Notification } from './notification'
     encapsulation: ViewEncapsulation.None,
 })
 export class NotificationComponent {
+    /**
+     * The notification to visualize.
+     */
     @Input()
     public data: Notification
 
     public constructor() {}
 
     /**
-     * Dismiss the notification on click.
+     * Dismisses the notification on click if enabled.
      */
     public dismiss(): void {
-        if (this.data.options.dismissOnClick) {
-            this.data.dismiss()
+        if (!this.data.options.clickable) {
+            return
         }
+
+        this.data.dismiss()
     }
 }
