@@ -10,6 +10,7 @@
   },
   "peerDependencies": {
     "@angular/common": "^6.1.2",
-    "@angular/core": "^6.1.2"
+    "@angular/core": "^6.1.2",
+    "@pascaliske/html-helpers": "^1.1.0"
   }
 }
