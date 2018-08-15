@@ -9,18 +9,22 @@ import { NotificationsService } from './notifications.service'
     imports: [CommonModule],
     declarations: [NotificationsComponent, NotificationComponent],
     exports: [NotificationsComponent],
-    providers: [
-        {
-            provide: NotificationsQueue,
-            useClass: NotificationsQueue,
-        },
-    ],
+    providers: [],
 })
 export class NotificationsModule {
     public static forRoot(): ModuleWithProviders {
         return {
             ngModule: NotificationsModule,
-            providers: [NotificationsService],
+            providers: [
+                {
+                    provide: NotificationsService,
+                    useClass: NotificationsService,
+                },
+                {
+                    provide: NotificationsQueue,
+                    useClass: NotificationsQueue,
+                },
+            ],
         }
     }
 }
