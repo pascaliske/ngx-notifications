@@ -1,4 +1,7 @@
 <div [class]="classes" [id]="data.uid" (click)="dismiss()">
     <div class="cmp-notification__type">{{data.type}}</div>
     <div class="cmp-notification__message">{{data.message}}</div>
+    <div class="cmp-notification__close" (click)="dismiss()">
+        <div class="cmp-notification__icon"></div>
+    </div>
 </div>
