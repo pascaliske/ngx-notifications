@@ -1,11 +1,14 @@
-import { Injectable } from '@angular/core'
+import { Injectable, Inject } from '@angular/core'
 import { NotificationsQueue } from './notifications.queue'
 import { Notification } from './notification'
-import { NotificationOptions } from './typings'
+import { ModuleOptions, NotificationOptions } from './typings'
 
 @Injectable()
 export class NotificationsService {
-    public constructor(private queue: NotificationsQueue) {}
+    public constructor(
+        @Inject('options') private options: ModuleOptions,
+        private queue: NotificationsQueue,
+    ) {}
 
     /**
      * Sends an info notification.

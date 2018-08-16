@@ -4,6 +4,7 @@ import { NotificationsComponent } from './notifications.component'
 import { NotificationComponent } from './notification.component'
 import { NotificationsQueue } from './notifications.queue'
 import { NotificationsService } from './notifications.service'
+import { ModuleOptions } from './typings'
 
 @NgModule({
     imports: [CommonModule],
@@ -12,10 +13,25 @@ import { NotificationsService } from './notifications.service'
     providers: [],
 })
 export class NotificationsModule {
-    public static forRoot(): ModuleWithProviders {
+    private static readonly defaults: ModuleOptions = {}
+
+    /**
+     * Initializes the NotificationsModule and provides access to the service.
+     *
+     * @param options
+     */
+    public static forRoot(options?: Partial<ModuleOptions>): ModuleWithProviders {
+        // merge options with defaults
+        options = { ...this.defaults, ...options }
+
+        // return with providers
         return {
             ngModule: NotificationsModule,
             providers: [
+                {
+                    provide: 'options',
+                    useValue: options,
+                },
                 {
                     provide: NotificationsService,
                     useClass: NotificationsService,
