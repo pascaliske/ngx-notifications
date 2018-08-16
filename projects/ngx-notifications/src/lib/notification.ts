@@ -48,13 +48,6 @@ export class Notification {
     public clicked$: Subject<MouseEvent> = new Subject()
 
     /**
-     * Dismissed state.
-     *
-     * @param dismissed
-     */
-    private dismissed: boolean = false
-
-    /**
      * Timeout subscriotion for late unsubscribing.
      *
      * @param timeout
@@ -70,6 +63,7 @@ export class Notification {
         timeout: 5000,
         clickable: true,
         dismissable: true,
+        dismissOnClick: false,
     }
 
     /**
@@ -104,17 +98,16 @@ export class Notification {
      * Dismiss the notification.
      */
     public dismiss(): void {
-        if (this.dismissed) {
+        if (!this.options.dismissable) {
             return
         }
 
-        if (this.timeout) {
+        if (this.timeout && !this.timeout.closed) {
             this.timeout.unsubscribe()
         }
 
         this.dismissed$.next()
         this.dismissed$.complete()
-        this.dismissed = true
     }
 
     /**

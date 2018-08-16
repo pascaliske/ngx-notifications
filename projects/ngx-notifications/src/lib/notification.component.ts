@@ -25,7 +25,9 @@ export class NotificationComponent {
             return
         }
 
-        this.data.dismiss()
+        // trigger dismiss
+        this.data.dismissed$.next()
+        this.data.dismissed$.complete()
     }
 
     /**
@@ -38,7 +40,15 @@ export class NotificationComponent {
             return
         }
 
+        // trigger click
         this.data.clicked$.next(event)
+
+        // auto dismiss on click if enabled
+        if (this.data.options.dismissOnClick) {
+            this.data.clicked$.complete()
+            this.data.dismissed$.next()
+            this.data.dismissed$.complete()
+        }
     }
 
     /**
@@ -48,6 +58,7 @@ export class NotificationComponent {
         return modifiers('cmp-notification', {
             [this.data.type]: true,
             clickable: this.data.options.clickable,
+            dismissable: this.data.options.dismissable,
             timeout: this.data.options.timeout > 0,
         })
     }
