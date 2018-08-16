@@ -34,18 +34,18 @@ export class Notification {
     public options: NotificationOptions
 
     /**
-     * Triggers a dismiss.
+     * Triggered if notification was dismissed.
      *
      * @param dismissed$
      */
     public dismissed$: Subject<void> = new Subject()
 
     /**
-     * Dismissed state.
+     * Triggered if notification was clicked.
      *
-     * @param dismissed
+     * @param clicked$
      */
-    private dismissed: boolean = false
+    public clicked$: Subject<MouseEvent> = new Subject()
 
     /**
      * Timeout subscriotion for late unsubscribing.
@@ -62,6 +62,8 @@ export class Notification {
     private readonly defaults: NotificationOptions = {
         timeout: 5000,
         clickable: true,
+        dismissable: true,
+        dismissOnClick: false,
     }
 
     /**
@@ -71,7 +73,11 @@ export class Notification {
      * @param message
      * @param options
      */
-    public constructor(type: NotificationType, message: string, options?: NotificationOptions) {
+    public constructor(
+        type: NotificationType,
+        message: string,
+        options?: Partial<NotificationOptions>,
+    ) {
         this.type = type
         this.message = this.renderMarkdown(message)
         this.options = {
@@ -92,17 +98,16 @@ export class Notification {
      * Dismiss the notification.
      */
     public dismiss(): void {
-        if (this.dismissed) {
+        if (!this.options.dismissable) {
             return
         }
 
-        if (this.timeout) {
+        if (this.timeout && !this.timeout.closed) {
             this.timeout.unsubscribe()
         }
 
         this.dismissed$.next()
         this.dismissed$.complete()
-        this.dismissed = true
     }
 
     /**

@@ -1,0 +1,7 @@
+.cmp-notifications {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    z-index: 9999;
+}
