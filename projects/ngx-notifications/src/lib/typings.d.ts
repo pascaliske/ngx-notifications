@@ -2,8 +2,9 @@
  * PUBLIC
  */
 export interface NotificationOptions {
-    timeout?: number
-    clickable?: boolean
+    timeout: number
+    clickable: boolean
+    dismissable: boolean
 }
 
 /**

@@ -71,7 +71,11 @@ export class Notification {
      * @param message
      * @param options
      */
-    public constructor(type: NotificationType, message: string, options?: NotificationOptions) {
+    public constructor(
+        type: NotificationType,
+        message: string,
+        options?: Partial<NotificationOptions>,
+    ) {
         this.type = type
         this.message = this.renderMarkdown(message)
         this.options = {

@@ -13,7 +13,7 @@ export class NotificationsService {
      * @param message
      * @param options
      */
-    public info(message: string, options?: NotificationOptions): Notification {
+    public info(message: string, options?: Partial<NotificationOptions>): Notification {
         return this.queue.add(new Notification('info', message, options))
     }
 
@@ -23,7 +23,7 @@ export class NotificationsService {
      * @param message
      * @param options
      */
-    public success(message: string, options?: NotificationOptions): Notification {
+    public success(message: string, options?: Partial<NotificationOptions>): Notification {
         return this.queue.add(new Notification('success', message, options))
     }
 
@@ -33,7 +33,7 @@ export class NotificationsService {
      * @param message
      * @param options
      */
-    public warning(message: string, options?: NotificationOptions): Notification {
+    public warning(message: string, options?: Partial<NotificationOptions>): Notification {
         return this.queue.add(new Notification('warning', message, options))
     }
 
@@ -43,7 +43,7 @@ export class NotificationsService {
      * @param message
      * @param options
      */
-    public error(message: string, options?: NotificationOptions): Notification {
+    public error(message: string, options?: Partial<NotificationOptions>): Notification {
         return this.queue.add(new Notification('error', message, options))
     }
 }
