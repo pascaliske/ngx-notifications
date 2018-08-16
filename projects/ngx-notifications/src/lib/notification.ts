@@ -34,11 +34,18 @@ export class Notification {
     public options: NotificationOptions
 
     /**
-     * Triggers a dismiss.
+     * Triggered if notification was dismissed.
      *
      * @param dismissed$
      */
     public dismissed$: Subject<void> = new Subject()
+
+    /**
+     * Triggered if notification was clicked.
+     *
+     * @param clicked$
+     */
+    public clicked$: Subject<MouseEvent> = new Subject()
 
     /**
      * Dismissed state.
@@ -62,6 +69,7 @@ export class Notification {
     private readonly defaults: NotificationOptions = {
         timeout: 5000,
         clickable: true,
+        dismissable: true,
     }
 
     /**

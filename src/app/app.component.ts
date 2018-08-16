@@ -10,8 +10,18 @@ export class AppComponent {
     public constructor(private notificationService: NotificationsService) {}
 
     public trigger(): void {
-        this.notificationService.info('Hello World!', {
+        const notification = this.notificationService.info('Hello World!', {
             timeout: 0,
+            clickable: false,
+            dismissable: true,
+        })
+
+        notification.clicked$.subscribe(event => {
+            console.log('==> clicked', event)
+        })
+
+        notification.dismissed$.subscribe(() => {
+            console.log('==> dismissed')
         })
     }
 }

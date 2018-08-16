@@ -17,14 +17,27 @@ export class NotificationComponent {
     public constructor() {}
 
     /**
-     * Dismisses the notification on click if enabled.
+     * Triggers a dismiss event.
      */
     public dismiss(): void {
-        if (!this.data.options.clickable) {
+        if (!this.data.options.dismissable) {
             return
         }
 
         this.data.dismiss()
+    }
+
+    /**
+     * Triggers a click event.
+     *
+     * @param event
+     */
+    public click(event): void {
+        if (!this.data.options.clickable) {
+            return
+        }
+
+        this.data.clicked$.next(event)
     }
 
     /**
