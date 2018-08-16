@@ -5,6 +5,7 @@ import { Notification } from './notification'
 @Component({
     selector: 'cmp-notification',
     templateUrl: './notification.component.html',
+    styleUrls: ['./notification.component.scss'],
     encapsulation: ViewEncapsulation.None,
 })
 export class NotificationComponent {
