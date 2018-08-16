@@ -1,13 +1,14 @@
 import { Subject, Subscription, interval } from 'rxjs'
 import { first } from 'rxjs/operators'
 import { v4 } from 'uuid'
+import { parse, MarkedOptions } from 'marked'
 import { NotificationType, NotificationOptions } from './typings'
 
 export class Notification {
     /**
      * Unique id.
      *
-     * @param message
+     * @param uid
      */
     public readonly uid: string = v4()
 
@@ -35,7 +36,7 @@ export class Notification {
     /**
      * Triggers a dismiss.
      *
-     * @param close$
+     * @param dismissed$
      */
     public dismissed$: Subject<void> = new Subject()
 
@@ -72,7 +73,7 @@ export class Notification {
      */
     public constructor(type: NotificationType, message: string, options?: NotificationOptions) {
         this.type = type
-        this.message = message
+        this.message = this.renderMarkdown(message)
         this.options = {
             ...this.defaults,
             ...options,
@@ -102,5 +103,18 @@ export class Notification {
         this.dismissed$.next()
         this.dismissed$.complete()
         this.dismissed = true
+    }
+
+    /**
+     * Renders the message from markdown to html.
+     *
+     * @param message
+     */
+    private renderMarkdown(message: string): string {
+        const options: MarkedOptions = {
+            gfm: true,
+        }
+
+        return parse(message, options)
     }
 }
