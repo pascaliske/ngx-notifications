@@ -1,8 +1,6 @@
 /**
  * PUBLIC
  */
-export interface ModuleOptions {}
-
 export interface NotificationOptions {
     timeout: number
     clickable: boolean
