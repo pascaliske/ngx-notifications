@@ -1,4 +1,4 @@
-import { Injectable, Inject } from '@angular/core'
+import { Injectable } from '@angular/core'
 import { NotificationsQueue } from './notifications.queue'
 import { Notification } from './notification'
 import { NotificationOptions } from './typings'
