@@ -1,27 +1,31 @@
 language: node_js
 node_js:
-    - '8'
-    - '9'
+  - '8'
+  - '9'
+  - '10'
 before_install: yarn global add greenkeeper-lockfile@1
 install:
-    - yarn install
+  - yarn install
 before_script: greenkeeper-lockfile-update
 script:
-    - yarn run lint
-    - yarn run build --prod
+  - yarn run lint
+  - yarn run build --prod
 after_script: greenkeeper-lockfile-upload
 before_deploy:
-    - cd dist/ngx-notifications
+  - cd dist/ngx-notifications
 deploy:
-    provider: npm
-    email: info@pascal-iske.de
-    api_key:
-        secure: nFB+u69/l1fCbMkiKpbwxCAO+0SlWMQTE9ghrcJ2QlZQwe0DeKqlnzJXt63Ef1uA4x9yg8/vDVzeLjBr6SU7vOZlw2eCkgvg3drHpq7TEYCz/5tLQ8h4II3AkBB/ITRr18cQ0r5vDsy17RkGlQ2IS6vYxuqZ9ov6Sjbn4JxAxMms44MFoAq0rvbczIsh5Q/ogqyPCXJcI56CYOuBn6nlSe6BSZviRyT5xPT1xJViGokA7PFzJPnAt+dg1a/U6fqnaJ1Gz6T6BVGJp7fQr0f4rr+YTWDiRutkGB6YzszOK70vB+2050AwdnupM51dR4Qrq5W+QxXkZkxGeaVMwFjRGofRY++q2r8yShQa1/N2/ntRqzHsTKUk2/nyEx2BL0PcgGJvCEVTQOkwaC+Hdh+QuD1Gv2gkFtxxigcRQosb9sw59QCB+/iq7NkO8kkeTW0DgPwo2zMj1r288Gh7q1taAgySQEtVVX6M22v5MYC0FVhu75F1K8gwSLQ/CMBICmTttPlvbTTCTSzoi48dPzcb8091uNo7M8pX4knE+jZl3jofwXYuonbrfXT9joe9r0jgeMkwrrk6tcIRpPcM/EwfTe6AP5prIqF9hKG0ewjqMXza4XCcsbl3h3SphCmv8hWl14ZT1ujyy6AQWV64Gw6dpKMQ1vJsu+V8eAirZGhkezg=
-    skip_cleanup: true
-    on:
-        tags: true
-        branch: master
-        node: 9
+  provider: npm
+  email: info@pascal-iske.de
+  api_key:
+    secure: nFB+u69/l1fCbMkiKpbwxCAO+0SlWMQTE9ghrcJ2QlZQwe0DeKqlnzJXt63Ef1uA4x9yg8/vDVzeLjBr6SU7vOZlw2eCkgvg3drHpq7TEYCz/5tLQ8h4II3AkBB/ITRr18cQ0r5vDsy17RkGlQ2IS6vYxuqZ9ov6Sjbn4JxAxMms44MFoAq0rvbczIsh5Q/ogqyPCXJcI56CYOuBn6nlSe6BSZviRyT5xPT1xJViGokA7PFzJPnAt+dg1a/U6fqnaJ1Gz6T6BVGJp7fQr0f4rr+YTWDiRutkGB6YzszOK70vB+2050AwdnupM51dR4Qrq5W+QxXkZkxGeaVMwFjRGofRY++q2r8yShQa1/N2/ntRqzHsTKUk2/nyEx2BL0PcgGJvCEVTQOkwaC+Hdh+QuD1Gv2gkFtxxigcRQosb9sw59QCB+/iq7NkO8kkeTW0DgPwo2zMj1r288Gh7q1taAgySQEtVVX6M22v5MYC0FVhu75F1K8gwSLQ/CMBICmTttPlvbTTCTSzoi48dPzcb8091uNo7M8pX4knE+jZl3jofwXYuonbrfXT9joe9r0jgeMkwrrk6tcIRpPcM/EwfTe6AP5prIqF9hKG0ewjqMXza4XCcsbl3h3SphCmv8hWl14ZT1ujyy6AQWV64Gw6dpKMQ1vJsu+V8eAirZGhkezg=
+  skip_cleanup: true
+  on:
+    tags: true
+    branch: master
+    node: 10
 env:
-    global:
-        secure: rp1aOgyvU7e3NH57+aKISSallK7IIzFV7+ygXI6X1l3N4hceEtu1TU5+qQPhsqS6K52mmNttimh4ilMqKiLMpGcDOLPBMqLacSwgWXDvToXT51JuEecehv3cJ0IAcnKTClQEaUy2mL4zQ+ptGLTX4xqirn64vf4U2gMMGQec/Xn4LlnzopQkwQ37ad3khXq2x9UQze1ogKU1JLI4kULAT90+cb/48OwHpWa07TCxyYvuVhjoQU6dkWwD93f3/T/7Nb1ybAHAiqP50lKh3c5iIOtCXzTHWv/EJzfBG98i73kFbDwA6Mry1ScnIGlQm+fcj8TtyYL3pjIneRtBKaP7STUfBxRwQwToI9H0vqaYKE6Yjcrz2sgCCFtGmSHcMvErNl907Q9gwMF6ssxPdeN8lxL+OcanOQtjYKkM0TxZKelDhspWhEU4whpTV+yOOki7v23vXTGazrlLI98Z2u40TLH7MrU6EptVnp28wsM/cFSX1fNCIxfq6BpbLUd9WzTNLXZm0bDzY7x3vYM1UBJj5/zjBdeeAGXre33jEiXGGds/1oIHJN/B/yz/5VwIFEF7I1UJJXOdYX/zx6zd7yB2VVkKVmQEdiMMv62LOEIc/ezBOPVpqWdsgbJVzhLAHxKwpIC1bKZtTEoseFNre7oRfmlHFv3PU4pu1pNwIWLyEHY=
+  global:
+    secure: rp1aOgyvU7e3NH57+aKISSallK7IIzFV7+ygXI6X1l3N4hceEtu1TU5+qQPhsqS6K52mmNttimh4ilMqKiLMpGcDOLPBMqLacSwgWXDvToXT51JuEecehv3cJ0IAcnKTClQEaUy2mL4zQ+ptGLTX4xqirn64vf4U2gMMGQec/Xn4LlnzopQkwQ37ad3khXq2x9UQze1ogKU1JLI4kULAT90+cb/48OwHpWa07TCxyYvuVhjoQU6dkWwD93f3/T/7Nb1ybAHAiqP50lKh3c5iIOtCXzTHWv/EJzfBG98i73kFbDwA6Mry1ScnIGlQm+fcj8TtyYL3pjIneRtBKaP7STUfBxRwQwToI9H0vqaYKE6Yjcrz2sgCCFtGmSHcMvErNl907Q9gwMF6ssxPdeN8lxL+OcanOQtjYKkM0TxZKelDhspWhEU4whpTV+yOOki7v23vXTGazrlLI98Z2u40TLH7MrU6EptVnp28wsM/cFSX1fNCIxfq6BpbLUd9WzTNLXZm0bDzY7x3vYM1UBJj5/zjBdeeAGXre33jEiXGGds/1oIHJN/B/yz/5VwIFEF7I1UJJXOdYX/zx6zd7yB2VVkKVmQEdiMMv62LOEIc/ezBOPVpqWdsgbJVzhLAHxKwpIC1bKZtTEoseFNre7oRfmlHFv3PU4pu1pNwIWLyEHY=
+notifications:
+  slack:
+    secure: MeMFT9uhC2UdzZaEjXiloK/yHRlB2Q5k5/gPbxmJim09v7bzu0dEdusNpWuwbZJY13KXF+pXh1UPa1ICuI/GogQ7+waUldsTE7qCWDxyOAPsZIffPvJLlX4Xnkcod/QaJL1xmb9lgqxMy1jUh0gI3qGmqQ5ZQpWTkQtlnoSoQvJd3FqA1MqVl2WvzUq4ok6rAfM29oX1oVGY3Eo/pvaCms0EyL5HZzYSTYe3mUt1lagT7W2pg9IaEyf1rgHIoReoIsL9RRsu2Luj1XJd4rR1+kR3G3ndmcs5s6XtJK+XpworMEwDjSb1y+gl2FQAhwzqvGW+A7k2u7smENtp9r8qr42T7hVB5hRj4IVnuV3VRG/TLGtQ5YTdMKzV4+IUOfXlZtKKTKxhTG36E1nlSaXs9HQcHwbCguPjYf2wDdDoe5GcaJubStCWVCVgBATg5/A7dUfbTaFfxksVNPNy7yID9n04L8N0kyHljaWOs6VHLnIoTNWRRRitsRBaydwMtIZB6ikijSwqp1WSwKvB8mHCpktB4IWLhhURRtIVY7SP/efHXwIMSM25izOKmRneLIJjiTGxNSAgWvmOTWYAgVEofsXGHEvgQPIqAx177cHv6oWJHS4WpxJACsXarMzwDzHeEbfUPelOc6Vae+zuphtnbsjHfp+pePuZk0w1NEDVJwc=
