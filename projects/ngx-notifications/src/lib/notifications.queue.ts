@@ -1,6 +1,10 @@
+import { Injectable } from '@angular/core'
 import { first } from 'rxjs/operators'
 import { Notification } from './notification'
 
+@Injectable({
+    providedIn: 'root',
+})
 export class NotificationsQueue {
     /**
      * Stores all active notifications.
