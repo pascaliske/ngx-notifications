@@ -1,7 +1,7 @@
 {
   "name": "@pascaliske/ngx-notifications",
   "description": "Notification module for Angular v6+.",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "publishConfig": {
     "access": "public"
   },
