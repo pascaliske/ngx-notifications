@@ -6,13 +6,13 @@
     "access": "public"
   },
   "dependencies": {
-    "marked": "^0.5.1",
+    "marked": "^0.5.2",
     "uuid": "^3.3.2"
   },
   "peerDependencies": {
     "@angular/common": "^6.0.0 || ^7.0.0",
     "@angular/core": "^6.0.0 || ^7.0.0",
     "@pascaliske/html-helpers": "^1.2.1",
-    "rxjs": "^6.2.2"
+    "rxjs": "^6.0.0"
   }
 }
