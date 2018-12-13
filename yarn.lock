@@ -355,17 +355,19 @@
   dependencies:
     "@types/jasmine" "*"
 
-"@types/marked@^0.4.2":
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/@types/marked/-/marked-0.4.2.tgz#64a89e53ea37f61cc0f3ee1732c555c2dbf6452f"
+"@types/marked@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@types/marked/-/marked-0.5.0.tgz#4b91c66ee8cf0abb6938e02fdec207279959962e"
+  integrity sha512-5uRumM3yeMj+JcvWGku/FRJJCmSWZczLd8FJf76a90YCltRHVpjF2gKHiL6U+pi4qyATn7HvxR0Mk7mDySwaOQ==
 
 "@types/node@*":
   version "10.7.1"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.7.1.tgz#b704d7c259aa40ee052eec678758a68d07132a2e"
 
-"@types/node@10.12.11":
-  version "10.12.11"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.11.tgz#715c476c99a5f6898a1ae61caf9825e43c03912e"
+"@types/node@10.12.14":
+  version "10.12.14"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.14.tgz#c03b6380c5c301be0499ecd143b99b76ebe45678"
+  integrity sha512-0rVcFRhM93kRGAU88ASCjX9Y3FWDCh+33G5Z5evpKOea4xcpLqDGwmo64+DjgaSezTN5j9KdnUzvxhOw7fNciQ==
 
 "@types/node@^6.0.46":
   version "6.0.116"
