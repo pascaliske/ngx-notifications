@@ -7,12 +7,10 @@ import { NotificationsService, NotificationOptions } from '@pascaliske/ngx-notif
     styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-    private types = ['info', 'warning', 'success', 'error']
-
     public constructor(private notificationService: NotificationsService) {}
 
-    public trigger(): void {
-        const type = this.types[Math.floor(Math.random() * 4)]
+    public create(): void {
+        const type = ['info', 'warning', 'success', 'error'][Math.floor(Math.random() * 4)]
         const options: NotificationOptions = {
             timeout: 0,
             clickable: Math.random() >= 0.5,
@@ -20,17 +18,15 @@ export class AppComponent {
             dismissOnClick: Math.random() >= 0.5,
         }
 
-        const notification = this.notificationService[type](
-            `random options: ${JSON.stringify(options)}`,
-            options,
-        )
+        const message = `random options: ${JSON.stringify(options)}`
+        const notification = this.notificationService[type](message, options)
 
         notification.clicked$.subscribe(event => {
-            console.log('==> clicked', event)
+            console.log('==> clicked', notification, event)
         })
 
         notification.dismissed$.subscribe(() => {
-            console.log('==> dismissed')
+            console.log('==> dismissed', notification)
         })
     }
 }

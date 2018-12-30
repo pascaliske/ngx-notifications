@@ -1,8 +1,15 @@
 import { Subject, Subscription, interval } from 'rxjs'
 import { first } from 'rxjs/operators'
 import { v4 } from 'uuid'
-import { parse, MarkedOptions } from 'marked'
-import { NotificationType, NotificationOptions } from './typings'
+
+export type NotificationType = 'info' | 'success' | 'warning' | 'error'
+
+export interface NotificationOptions {
+    timeout: number
+    clickable: boolean
+    dismissable: boolean
+    dismissOnClick: boolean
+}
 
 export class Notification {
     /**
@@ -69,9 +76,9 @@ export class Notification {
     /**
      * Bootstraps a notification and starts the timer.
      *
-     * @param type
-     * @param message
-     * @param options
+     * @param - The {@link NotificationType}
+     * @param - The notification message
+     * @param - Optional options for the notification
      */
     public constructor(
         type: NotificationType,
@@ -79,7 +86,7 @@ export class Notification {
         options?: Partial<NotificationOptions>,
     ) {
         this.type = type
-        this.message = this.renderMarkdown(message)
+        this.message = message
         this.options = {
             ...this.defaults,
             ...options,
@@ -108,18 +115,5 @@ export class Notification {
 
         this.dismissed$.next()
         this.dismissed$.complete()
-    }
-
-    /**
-     * Renders the message from markdown to html.
-     *
-     * @param message
-     */
-    private renderMarkdown(message: string): string {
-        const options: MarkedOptions = {
-            gfm: true,
-        }
-
-        return parse(message, options)
     }
 }

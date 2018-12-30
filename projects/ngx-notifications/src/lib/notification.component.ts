@@ -33,9 +33,9 @@ export class NotificationComponent {
     /**
      * Triggers a click event.
      *
-     * @param event
+     * @param - The click event
      */
-    public click(event): void {
+    public click(event: MouseEvent): void {
         if (!this.data.options.clickable) {
             return
         }

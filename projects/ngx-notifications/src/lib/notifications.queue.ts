@@ -9,9 +9,9 @@ export class NotificationsQueue {
     /**
      * Stores all active notifications.
      *
-     * @param notifications
+     * @param items
      */
-    public items: Array<Notification> = []
+    public items: Notification[] = []
 
     public constructor() {}
 
