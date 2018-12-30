@@ -23,7 +23,6 @@
     "postbuild": "cp README.md dist/ngx-notifications/README.md && cp LICENSE.md dist/ngx-notifications/LICENSE.md",
     "lint": "ng lint",
     "format": "prettier --write \"{src,projects}/**/*.ts\"",
-    "precommit": "lint-staged",
     "link": "yarn run build && cd dist/ngx-notifications && yarn link",
     "unlink": "cd dist/ngx-notifications && yarn unlink"
   },
@@ -31,6 +30,11 @@
     "ignore": [
       "typescript"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "precommit": "lint-staged"
+    }
   },
   "lint-staged": {
     "{src,projects}/**/*.ts": [
