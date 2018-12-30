@@ -1,52 +1,75 @@
-import { Injectable } from '@angular/core'
-import { NotificationsModule } from './notifications.module'
+import { Injectable, Inject } from '@angular/core'
+import { ModuleOptions, OPTIONS } from './tokens'
 import { NotificationsQueue } from './notifications.queue'
-import { Notification } from './notification'
-import { NotificationOptions } from './typings'
+import { Notification, NotificationType, NotificationOptions } from './notification'
 
 @Injectable({
-    providedIn: NotificationsModule,
+    providedIn: 'root',
 })
 export class NotificationsService {
-    public constructor(private queue: NotificationsQueue) {}
+    public constructor(
+        @Inject(OPTIONS) private options: ModuleOptions,
+        private queue: NotificationsQueue,
+    ) {}
 
     /**
-     * Sends an info notification.
+     * Sends an info {@link Notification}.
      *
-     * @param message
-     * @param options
+     * @param - The message to display
+     * @param - Optional options for the notification
      */
     public info(message: string, options?: Partial<NotificationOptions>): Notification {
-        return this.queue.add(new Notification('info', message, options))
+        return this.queue.add(this.create('info', message, options))
     }
 
     /**
-     * Send a success notification.
+     * Send a success {@link Notification}.
      *
-     * @param message
-     * @param options
+     * @param - The message to display
+     * @param - Optional options for the notification
      */
     public success(message: string, options?: Partial<NotificationOptions>): Notification {
-        return this.queue.add(new Notification('success', message, options))
+        return this.queue.add(this.create('success', message, options))
     }
 
     /**
-     * Sends a warning notification.
+     * Sends a warning {@link Notification}.
      *
-     * @param message
-     * @param options
+     * @param - The message to display
+     * @param - Optional options for the notification
      */
     public warning(message: string, options?: Partial<NotificationOptions>): Notification {
-        return this.queue.add(new Notification('warning', message, options))
+        return this.queue.add(this.create('warning', message, options))
     }
 
     /**
-     * Sends an error notification.
+     * Sends an error {@link Notification}.
      *
-     * @param message
-     * @param options
+     * @param - The message to display
+     * @param - Optional options for the notification
      */
     public error(message: string, options?: Partial<NotificationOptions>): Notification {
-        return this.queue.add(new Notification('error', message, options))
+        return this.queue.add(this.create('error', message, options))
+    }
+
+    /**
+     * Creates a new {@link Notification}
+     *
+     * @param - The {@link NotificationType}
+     * @param - The message to display
+     * @param - Optional options for the notification
+     * @returns - Returns the notification instance
+     */
+    private create(
+        type: NotificationType,
+        message: string,
+        options?: Partial<NotificationOptions>,
+    ): Notification {
+        // use custom markdown parser if set
+        if (this.options && this.options.markdown) {
+            message = this.options.markdown(message)
+        }
+
+        return new Notification(type, message, options)
     }
 }

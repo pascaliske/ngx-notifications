@@ -3,10 +3,9 @@
   "dest": "../../dist/ngx-notifications",
   "deleteDestPath": false,
   "whitelistedNonPeerDependencies": [
-    "marked",
     "uuid"
   ],
   "lib": {
-    "entryFile": "src/index.ts"
+    "entryFile": "src/exports.ts"
   }
 }
