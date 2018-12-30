@@ -7,6 +7,6 @@
     "uuid"
   ],
   "lib": {
-    "entryFile": "src/index.ts"
+    "entryFile": "src/exports.ts"
   }
 }
