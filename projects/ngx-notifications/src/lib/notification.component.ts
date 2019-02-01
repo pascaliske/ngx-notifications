@@ -1,5 +1,6 @@
-import { Component, Input, ViewEncapsulation } from '@angular/core'
+import { Component, Inject, Input, ViewEncapsulation } from '@angular/core'
 import { modifiers } from '@pascaliske/html-helpers'
+import { ModuleOptions, OPTIONS } from './tokens'
 import { Notification } from './notification'
 
 @Component({
@@ -15,7 +16,7 @@ export class NotificationComponent {
     @Input()
     public data: Notification
 
-    public constructor() {}
+    public constructor(@Inject(OPTIONS) private options: ModuleOptions) {}
 
     /**
      * Triggers a dismiss event.
@@ -49,6 +50,17 @@ export class NotificationComponent {
             this.data.dismissed$.next()
             this.data.dismissed$.complete()
         }
+    }
+
+    /**
+     * Returns the label for the notification type.
+     */
+    public get label(): string {
+        if (this.options && this.options.labels && this.options.labels[this.data.type]) {
+            return this.options.labels[this.data.type]
+        }
+
+        return this.data.type
     }
 
     /**
