@@ -18,6 +18,14 @@
     "@angular-devkit/core" "7.3.0"
     rxjs "6.3.3"
 
+"@angular-devkit/build-angular@~0.12.0":
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/build-angular/-/build-angular-0.12.0.tgz#e182335703aecfc5f73617d31fca41940ba537cb"
+  integrity sha512-Mm0PbkKA/Jt4fBQp7kyqS/jIqE+SA3WOxqZaGN8ponfq55LOY/7Qh0dgGbQP9UtM4ohg+eOAn3mRNbeicfkPMw==
+  dependencies:
+    "@angular-devkit/core" "7.3.0"
+    rxjs "6.3.3"
+
 "@angular-devkit/build-angular@~0.13.0":
   version "0.13.0"
   resolved "https://registry.yarnpkg.com/@angular-devkit/build-angular/-/build-angular-0.13.0.tgz#b41cd80772b7d0dc71081353a799fdd534bfc885"
@@ -71,15 +79,15 @@
   optionalDependencies:
     node-sass "4.11.0"
 
-"@angular-devkit/build-ng-packagr@~0.12.0":
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/build-ng-packagr/-/build-ng-packagr-0.12.0.tgz#8cee3d40cddb71a3b78bded746fa30eb8d230958"
-  integrity sha512-5H4MG124XXtclfNDZQzKAQIaTmHZwvceS5JCasMmfQljwB/BOXlJBXB3dW/I5DGgu9hZVD3mySjwWXxKqfYGTQ==
+"@angular-devkit/build-ng-packagr@~0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/build-ng-packagr/-/build-ng-packagr-0.13.0.tgz#b02d4793bf6f1720f2defb5fecdca1377c0a15b0"
+  integrity sha512-Up7p300FJS7HJmZOvNZXzYsBRPqMJJKQGaOeINDPBsQFHcxIt4LQmQsqUa/4DEczR9Z2/KhlduXbNI+c7wmlgg==
   dependencies:
-    "@angular-devkit/architect" "0.12.0"
-    "@angular-devkit/core" "7.2.0"
+    "@angular-devkit/architect" "0.13.0"
+    "@angular-devkit/core" "7.3.0"
     rxjs "6.3.3"
-    semver "5.5.1"
+    semver "5.6.0"
 
 "@angular-devkit/build-optimizer@0.13.0":
   version "0.13.0"
@@ -115,6 +123,17 @@
   version "7.3.0"
   resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-7.3.0.tgz#fc272e39b4c307833e9a7db77007418a246f5410"
   integrity sha512-b0qtAUpgqLpWY8W6vWRv1aj6bXkZCP1rvywl8i8TbGMY67CWRcy5J3fNAMmjiZS+LJixFlIXYf4iOydglyJMfg==
+  dependencies:
+    ajv "6.7.0"
+    chokidar "2.0.4"
+    fast-json-stable-stringify "2.0.0"
+    rxjs "6.3.3"
+    source-map "0.7.3"
+
+"@angular-devkit/schematics@7.2.0":
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-7.2.0.tgz#6d51209047bd6a74bcea99fcd0b48fedbbd074d3"
+  integrity sha512-xhQTZWayhY32AexLeAhFeyccjSzagWvPkDaOlPbr1clSdGPR+qjdmfOKhQOxiH/0KG812XDoolwc7fToM2j/ow==
   dependencies:
     ajv "6.7.0"
     chokidar "2.0.4"
