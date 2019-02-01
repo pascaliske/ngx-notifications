@@ -19,7 +19,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve ngx-notifications-demo",
-    "build": "ng build",
+    "build": "ng build --prod",
     "postbuild": "cp README.md dist/ngx-notifications/README.md && cp LICENSE.md dist/ngx-notifications/LICENSE.md",
     "lint": "ng lint",
     "format": "prettier --write \"{src,projects}/**/*.ts\"",
