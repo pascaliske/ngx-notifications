@@ -8,6 +8,10 @@ import { AppComponent } from './app.component'
     imports: [
         BrowserModule,
         NotificationsModule.forRoot({
+            labels: {
+                info: 'INFO',
+                error: 'ERROR',
+            },
             markdown: (src: string) => parse(src, { gfm: true }),
         }),
     ],
