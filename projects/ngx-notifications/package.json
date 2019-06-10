@@ -1,7 +1,7 @@
 {
   "name": "@pascaliske/ngx-notifications",
   "description": "Notification module for Angular v6+.",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "license": "MIT",
   "author": {
     "name": "Pascal Iske",
@@ -22,8 +22,8 @@
     "uuid": "^3.3.2"
   },
   "peerDependencies": {
-    "@angular/common": "^6.0.0 || ^7.0.0",
-    "@angular/core": "^6.0.0 || ^7.0.0",
+    "@angular/common": "^7.0.0 || ^8.0.0",
+    "@angular/core": "^7.0.0 || ^8.0.0",
     "@pascaliske/html-helpers": "^1.2.1",
     "rxjs": "^6.0.0"
   }
