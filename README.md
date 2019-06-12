@@ -1,6 +1,6 @@
 # `@pascaliske/ngx-notifications`
 
-[![npm (scoped)](https://img.shields.io/npm/v/@pascaliske/ngx-notifications.svg?style=flat-square)](https://www.npmjs.com/package/@pascaliske/ngx-notifications) [![GitHub Tag](https://img.shields.io/github/tag/pascaliske/ngx-notifications.svg?style=flat-square)](https://github.com/pascaliske/ngx-notifications) [![Travis CI](https://img.shields.io/travis/com/pascaliske/ngx-notifications/master.svg?style=flat-square)](https://travis-ci.com/pascaliske/ngx-notifications) [![Greenkeeper](https://badges.greenkeeper.io/pascaliske/ngx-notifications.svg?style=flat-square)](https://greenkeeper.io) [![Awesome Badges](https://img.shields.io/badge/badges-awesome-green.svg?style=flat-square)](https://github.com/Naereen/badges)
+[![npm (scoped)](https://img.shields.io/npm/v/@pascaliske/ngx-notifications.svg?style=flat-square)](https://www.npmjs.com/package/@pascaliske/ngx-notifications) [![GitHub Tag](https://img.shields.io/github/tag/pascaliske/ngx-notifications.svg?style=flat-square)](https://github.com/pascaliske/ngx-notifications) [![Travis CI](https://img.shields.io/travis/com/pascaliske/ngx-notifications/master.svg?style=flat-square)](https://travis-ci.com/pascaliske/ngx-notifications) [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=pascaliske/ngx-notifications)](https://dependabot.com) [![Awesome Badges](https://img.shields.io/badge/badges-awesome-green.svg?style=flat-square)](https://github.com/Naereen/badges)
 
 ## Installation
 
