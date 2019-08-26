@@ -60,7 +60,7 @@
     "@types/uuid": "^3.4.5",
     "codelyzer": "^5.0.1",
     "husky": "^3.0.4",
-    "lint-staged": "^9.2.3",
+    "lint-staged": "^9.2.4",
     "marked": "^0.7.0",
     "ng-packagr": "^5.5.0",
     "prettier": "^1.16.3",
