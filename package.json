@@ -42,7 +42,7 @@
     "@angular/platform-browser-dynamic": "^8.0.1",
     "@angular/router": "^8.0.1",
     "@pascaliske/html-helpers": "^1.5.7",
-    "core-js": "^3.4.4",
+    "core-js": "^3.4.5",
     "rxjs": "^6.5.3",
     "uuid": "^3.3.3",
     "zone.js": "~0.9.1"
