@@ -58,7 +58,7 @@
     "@types/marked": "^0.7.2",
     "@types/node": "12.12.21",
     "@types/uuid": "^3.4.6",
-    "codelyzer": "^5.2.0",
+    "codelyzer": "^5.2.1",
     "husky": "^3.1.0",
     "lint-staged": "^9.5.0",
     "marked": "^0.8.0",
