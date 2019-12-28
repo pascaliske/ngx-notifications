@@ -1,4 +1,4 @@
-/*
+/**
  * Public API Surface
  */
 export * from './lib/notifications.module'

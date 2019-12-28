@@ -7,7 +7,7 @@
 To install the module use the following command:
 
 ```bash
-$ yarn add @pascaliske/ngx-notifications
+$ ng add @pascaliske/ngx-notifications
 ```
 
 ## Usage
