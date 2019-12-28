@@ -2,9 +2,7 @@
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
   "dest": "../../dist/ngx-notifications",
   "deleteDestPath": false,
-  "whitelistedNonPeerDependencies": [
-    "uuid"
-  ],
+  "whitelistedNonPeerDependencies": ["uuid"],
   "lib": {
     "entryFile": "src/exports.ts"
   }

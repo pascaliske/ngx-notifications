@@ -1,5 +1,5 @@
 <div [class]="classes" [id]="data.uid" (click)="click($event)">
-    <div class="cmp-notification__type">{{label}}</div>
+    <div class="cmp-notification__type">{{ label }}</div>
     <div class="cmp-notification__message" [innerHTML]="data.message"></div>
     <div class="cmp-notification__close" (click)="dismiss()">
         <div class="cmp-notification__icon"></div>

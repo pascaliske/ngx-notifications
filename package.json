@@ -26,7 +26,7 @@
     "copy:license": "cp LICENSE.md dist/ngx-notifications/LICENSE.md",
     "copy:collection": "cp projects/ngx-notifications/schematics/collection.json dist/ngx-notifications/schematics/collection.json",
     "lint": "ng lint",
-    "format": "prettier --write \"{src,projects}/**/*.ts\"",
+    "format": "prettier --write \"{src,projects}/**/*.{ts,html,scss,json}\"",
     "changelog": "standard-changelog --release-count 1",
     "link": "yarn run build && cd dist/ngx-notifications && yarn link",
     "unlink": "cd dist/ngx-notifications && yarn unlink"

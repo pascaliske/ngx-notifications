@@ -2,11 +2,6 @@
   "extends": "../../tslint.json",
   "rules": {
     "directive-selector": false,
-    "component-selector": [
-      true,
-      "element",
-      "cmp",
-      "kebab-case"
-    ]
+    "component-selector": [true, "element", "cmp", "kebab-case"]
   }
 }
