@@ -1,3 +1,13 @@
+# [1.4.0](https://github.com/pascaliske/ngx-notifications/compare/v1.3.2...v1.4.0) (2019-12-28)
+
+
+### Features
+
+* add ng-add schematics for easier installation ([f17b75e](https://github.com/pascaliske/ngx-notifications/commit/f17b75e141e015847d29ecaada455463117099fd))
+* upgrade angular to v9 ([ea3a3d5](https://github.com/pascaliske/ngx-notifications/commit/ea3a3d5ec308d02131ac682e71895fdbd05e1def))
+
+
+
 ## [1.3.2](https://github.com/pascaliske/ngx-notifications/compare/v1.3.1...v1.3.2) (2019-06-28)
 
 
