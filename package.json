@@ -19,10 +19,12 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve ngx-notifications-demo",
-    "build": "run-s build:lib copy:readme copy:license",
+    "build": "run-s build:lib build:schematics copy:readme copy:license copy:collection",
     "build:lib": "ng build --prod",
+    "build:schematics": "tsc -p projects/ngx-notifications/tsconfig.schematics.json",
     "copy:readme": "cp README.md dist/ngx-notifications/README.md",
     "copy:license": "cp LICENSE.md dist/ngx-notifications/LICENSE.md",
+    "copy:collection": "cp projects/ngx-notifications/schematics/collection.json dist/ngx-notifications/schematics/collection.json",
     "lint": "ng lint",
     "format": "prettier --write \"{src,projects}/**/*.ts\"",
     "changelog": "standard-changelog --release-count 1",
@@ -42,6 +44,7 @@
     "@pascaliske/html-helpers": "^1.5.7",
     "core-js": "^3.6.1",
     "rxjs": "^6.5.4",
+    "schematics-utilities": "^2.0.0",
     "tslib": "^1.10.0",
     "uuid": "^3.3.3",
     "zone.js": "~0.10.2"
