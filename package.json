@@ -27,7 +27,7 @@
     "copy:collection": "cp projects/ngx-notifications/schematics/collection.json dist/ngx-notifications/schematics/collection.json",
     "lint": "ng lint",
     "format": "prettier --write \"{src,projects}/**/*.{ts,html,scss,json}\"",
-    "changelog": "standard-changelog --release-count 1",
+    "changelog": "standard-changelog",
     "link": "yarn run build && cd dist/ngx-notifications && yarn link",
     "unlink": "cd dist/ngx-notifications && yarn unlink"
   },
