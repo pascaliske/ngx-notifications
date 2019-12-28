@@ -16,7 +16,7 @@ export class NotificationsModule {
      * @param - The module options
      * @returns - The module with all providers
      */
-    public static forRoot(options?: ModuleOptions): ModuleWithProviders {
+    public static forRoot(options?: ModuleOptions): ModuleWithProviders<NotificationsModule> {
         return {
             ngModule: NotificationsModule,
             providers: [

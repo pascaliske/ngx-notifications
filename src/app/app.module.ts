@@ -4,15 +4,19 @@ import { NotificationsModule } from '@pascaliske/ngx-notifications'
 import { parse } from 'marked'
 import { AppComponent } from './app.component'
 
+export function markdown(src: string): string {
+    return parse(src, { gfm: true })
+}
+
 @NgModule({
     imports: [
         BrowserModule,
         NotificationsModule.forRoot({
+            markdown,
             labels: {
                 info: 'INFO',
                 error: 'ERROR',
             },
-            markdown: (src: string) => parse(src, { gfm: true }),
         }),
     ],
     bootstrap: [AppComponent],
