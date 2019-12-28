@@ -27,6 +27,7 @@
     "link": "yarn run build && cd dist/ngx-notifications && yarn link",
     "unlink": "cd dist/ngx-notifications && yarn unlink"
   },
+  "prettier": "@pascaliske/prettier-config",
   "dependencies": {
     "@angular/animations": "^9.0.0-rc.7",
     "@angular/common": "^9.0.0-rc.7",
@@ -51,6 +52,7 @@
     "@angular/language-service": "^9.0.0-rc.7",
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
+    "@pascaliske/prettier-config": "^1.0.2",
     "@types/marked": "^0.7.2",
     "@types/node": "^12.11.1",
     "@types/uuid": "^3.4.6",
