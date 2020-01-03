@@ -57,7 +57,7 @@
     "@angular/compiler-cli": "^9.0.0-rc.7",
     "@angular/language-service": "^9.0.0-rc.7",
     "@commitlint/cli": "^8.3.3",
-    "@commitlint/config-conventional": "^8.3.3",
+    "@commitlint/config-conventional": "^8.3.4",
     "@pascaliske/prettier-config": "^1.0.2",
     "@types/marked": "^0.7.2",
     "@types/node": "^13.1.2",
