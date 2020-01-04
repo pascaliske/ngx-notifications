@@ -105,7 +105,7 @@
     "@angular-devkit/core" "9.0.0-rc.7"
     rxjs "6.5.3"
 
-"@angular-devkit/core@8.3.21", "@angular-devkit/core@^8.3.8":
+"@angular-devkit/core@8.3.21", "@angular-devkit/core@^8.3.21":
   version "8.3.21"
   resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-8.3.21.tgz#447022813e46333e930816c287722d06b9c4dd3a"
   integrity sha512-BYyVbrbys535FplX0+GVOlYBg/cyk1U5SRhSxRRFZYi9epVlEBBPk8/6wV4cQPGb6EwXkVj7YtPWXjXcGfzWmA==
@@ -127,7 +127,7 @@
     rxjs "6.5.3"
     source-map "0.7.3"
 
-"@angular-devkit/schematics@8.3.21", "@angular-devkit/schematics@^8.3.8":
+"@angular-devkit/schematics@8.3.21", "@angular-devkit/schematics@^8.3.21":
   version "8.3.21"
   resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-8.3.21.tgz#80d515f480180be18a4130ea691f90153bcab3ea"
   integrity sha512-+wH0362CRr/SijVX4w2baY2ANZ4scQ1k2xO8lT+NMeZQkw3IJQPOfwk1IaqiAs2xuBJZcSDH1Gn80+Jh4Dit7w==
@@ -148,15 +148,6 @@
   version "9.0.0-rc.7"
   resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-9.0.0-rc.7.tgz#ed1aadba110ff086e4a522e802ea5b6d499a7ad3"
   integrity sha512-N2JnT9XHu2wOo4zzjK+Aiu0Ow5NYXLIp2XSHPH31ZOzhNj5eSFZJr1Sjk0bg6oXDqCIyfcAUQnkwYKbe2NyeFQ==
-
-"@angular/cdk@^8.2.2":
-  version "8.2.3"
-  resolved "https://registry.yarnpkg.com/@angular/cdk/-/cdk-8.2.3.tgz#16b96ffa935cbf5a646757ecaf2b19c434678f72"
-  integrity sha512-ZwO5Sn720RA2YvBqud0JAHkZXjmjxM0yNzCO8RVtRE9i8Gl26Wk0j0nQeJkVm4zwv2QO8MwbKUKGTMt8evsokA==
-  dependencies:
-    tslib "^1.7.1"
-  optionalDependencies:
-    parse5 "^5.0.0"
 
 "@angular/cli@~9.0.0-rc.7":
   version "9.0.0-rc.7"
@@ -1113,7 +1104,7 @@
     "@angular-devkit/core" "9.0.0-rc.7"
     "@angular-devkit/schematics" "9.0.0-rc.7"
 
-"@schematics/angular@^8.3.8":
+"@schematics/angular@^8.3.21":
   version "8.3.21"
   resolved "https://registry.yarnpkg.com/@schematics/angular/-/angular-8.3.21.tgz#4902e0b6e8be47006859009bf96a026e3d39dd27"
   integrity sha512-KahQ+dHvTsGOZwY6IdzqJZLDEn0G89rrK3OY+7okZujoaLM+LXhxlPoznW1udnZJVTa3VNxYGx11fkgLtRJRqA==
@@ -1136,7 +1127,7 @@
     semver "6.3.0"
     semver-intersect "1.4.0"
 
-"@schematics/update@^0.803.8":
+"@schematics/update@^0.803.21":
   version "0.803.21"
   resolved "https://registry.yarnpkg.com/@schematics/update/-/update-0.803.21.tgz#572c955bb132348bca03a128491ae264b0068a0a"
   integrity sha512-D3BRvEBF2cJEgogvFaNOfqtTFHHv/ctSRfOeAYWjUxILtb+2DpuZ9h5QYDFhN9MPgz/vRaOqFORa3sEZCRkX4g==
@@ -6868,7 +6859,7 @@ parse5@4.0.0:
   resolved "https://registry.yarnpkg.com/parse5/-/parse5-4.0.0.tgz#6d78656e3da8d78b4ec0b906f7c08ef1dfe3f608"
   integrity sha512-VrZ7eOd3T1Fk4XWNXMgiGBK/z0MG48BWG2uQNU4I72fkQuKUTZpl+u9k+CxEG0twMVzSmXEEz12z5Fnw1jIQFA==
 
-parse5@^5.0.0, parse5@^5.1.0:
+parse5@^5.1.0:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/parse5/-/parse5-5.1.1.tgz#f68e4e5ba1852ac2cadc00f4555fff6c2abb6178"
   integrity sha512-ugq4DFI0Ptb+WWjAdOK16+u/nHfiIrcE+sh8kZMaM0WllQKLI9rOUq6c2b7cwPkXdzfQESqvoqK6ug7U/Yyzug==
@@ -8013,16 +8004,15 @@ schema-utils@^2.1.0, schema-utils@^2.5.0:
     ajv "^6.10.2"
     ajv-keywords "^3.4.1"
 
-schematics-utilities@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/schematics-utilities/-/schematics-utilities-2.0.0.tgz#89622fd0395b5145a5b28c8ed9c004fa099cabd3"
-  integrity sha512-Udfhw9KhrvJBb+JiHsc0SGnr2vui3kWf9ceBhHdBPYlMoChjqJ1WR8w47sOj37Wsel7jtl/8TRt53RJmXtZXjw==
+schematics-utilities@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/schematics-utilities/-/schematics-utilities-2.0.1.tgz#c763ee078b27d41540a455f3def8f3900edb5d9d"
+  integrity sha512-8tOOrWfBLayBefH/9Gdj+4oZ9aO+joRy4sZeQQ1l/rEaPt+bdZchEgllTz5rz0L/nX0Q/vYUmKXZiPEt0LOiWg==
   dependencies:
-    "@angular-devkit/core" "^8.3.8"
-    "@angular-devkit/schematics" "^8.3.8"
-    "@angular/cdk" "^8.2.2"
-    "@schematics/angular" "^8.3.8"
-    "@schematics/update" "^0.803.8"
+    "@angular-devkit/core" "^8.3.21"
+    "@angular-devkit/schematics" "^8.3.21"
+    "@schematics/angular" "^8.3.21"
+    "@schematics/update" "^0.803.21"
     rxjs "^6.4.0"
     typescript "^3.6.3"
   optionalDependencies:
@@ -9018,7 +9008,7 @@ ts-node@~8.5.4:
     source-map-support "^0.5.6"
     yn "^3.0.0"
 
-tslib@1.10.0, tslib@^1.10.0, tslib@^1.7.1, tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0:
+tslib@1.10.0, tslib@^1.10.0, tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0:
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
   integrity sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==
