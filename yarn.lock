@@ -6356,10 +6356,10 @@ neo-async@^2.5.0, neo-async@^2.6.0, neo-async@^2.6.1:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.1.tgz#ac27ada66167fa8849a6addd837f6b189ad2081c"
   integrity sha512-iyam8fBuCUpWeKPGpaNMetEocMt364qkCsfL9JuhjXX6dRnguRVOfk2GZaDpPjcOKiiXCPINZC1GczQ7iTq3Zw==
 
-ng-packagr@^9.0.0-rc.9:
-  version "9.0.0-rc.9"
-  resolved "https://registry.yarnpkg.com/ng-packagr/-/ng-packagr-9.0.0-rc.9.tgz#a12f8cfd01fb56513d7cb407300146782066fad1"
-  integrity sha512-JuGZLH1f8yT68XSICeGUkMZzh5pkalLNEuaL4b7Nv6oDnOIouYbQ+NKJXWI7Y3Thc+plasOQbkyFNGzRAmjSNQ==
+ng-packagr@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/ng-packagr/-/ng-packagr-9.0.0.tgz#a91d2092f95e51e6746f78a2c9b4fc9badb80d45"
+  integrity sha512-uK9sdOmjAQJgKh/3UN0/3XmV5IRTmdQt3vRElwbmd+rAl8Z/g/h2CMLIXqhLOfWcLnYzepkhoXlQPbiwpxAw0w==
   dependencies:
     "@rollup/plugin-commonjs" "^11.0.2"
     "@rollup/plugin-json" "^4.0.0"
