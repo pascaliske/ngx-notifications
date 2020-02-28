@@ -1,6 +1,6 @@
 import { Subject, Subscription, interval } from 'rxjs'
 import { first } from 'rxjs/operators'
-import { v4 } from 'uuid'
+import { v4 as uuid } from 'uuid'
 
 export type NotificationType = 'info' | 'success' | 'warning' | 'error'
 
@@ -17,7 +17,7 @@ export class Notification {
      *
      * @param uid
      */
-    public readonly uid: string = v4()
+    public readonly uid: string = uuid()
 
     /**
      * User entered notification type.
