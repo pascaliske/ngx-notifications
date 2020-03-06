@@ -59,7 +59,7 @@
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "@pascaliske/prettier-config": "^1.0.2",
-    "@types/marked": "^0.7.2",
+    "@types/marked": "^0.7.3",
     "@types/node": "^13.9.0",
     "@types/uuid": "^7.0.0",
     "bump-cli": "^1.1.3",
