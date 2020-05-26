@@ -1,3 +1,7 @@
+## [1.4.3](https://github.com/pascaliske/ngx-notifications/compare/v1.4.2...v1.4.3) (2020-05-26)
+
+
+
 ## [1.4.2](https://github.com/pascaliske/ngx-notifications/compare/v1.4.1...v1.4.2) (2020-03-24)
 
 
