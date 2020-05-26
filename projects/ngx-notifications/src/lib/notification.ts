@@ -1,5 +1,5 @@
 import { Subject, Subscription, interval } from 'rxjs'
-import { first } from 'rxjs/operators'
+import { take } from 'rxjs/operators'
 import { v4 as uuid } from 'uuid'
 
 export type NotificationType = 'info' | 'success' | 'warning' | 'error'
@@ -24,21 +24,21 @@ export class Notification {
      *
      * @param type
      */
-    public type: NotificationType
+    public readonly type: NotificationType
 
     /**
      * User entered notification message.
      *
      * @param message
      */
-    public message: string
+    public readonly message: string
 
     /**
      * User entered notification options.
      *
      * @param options
      */
-    public options: NotificationOptions
+    public readonly options: NotificationOptions
 
     /**
      * Triggered if notification was dismissed.
@@ -83,18 +83,15 @@ export class Notification {
     public constructor(
         type: NotificationType,
         message: string,
-        options?: Partial<NotificationOptions>,
+        options: Partial<NotificationOptions> = {},
     ) {
         this.type = type
         this.message = message
-        this.options = {
-            ...this.defaults,
-            ...options,
-        }
+        this.options = { ...this.defaults, ...options }
 
-        if (this.options.timeout > 0) {
-            this.timeout = interval(this.options.timeout)
-                .pipe(first())
+        if (this.options?.timeout > 0) {
+            this.timeout = interval(this.options?.timeout)
+                .pipe(take(1))
                 .subscribe(() => {
                     this.dismiss()
                 })
@@ -105,11 +102,11 @@ export class Notification {
      * Dismiss the notification.
      */
     public dismiss(): void {
-        if (!this.options.dismissable) {
+        if (!this.options?.dismissable) {
             return
         }
 
-        if (this.timeout && !this.timeout.closed) {
+        if (!this.timeout?.closed) {
             this.timeout.unsubscribe()
         }
 

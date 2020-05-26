@@ -66,7 +66,7 @@ export class NotificationsService {
         options?: Partial<NotificationOptions>,
     ): Notification {
         // use custom markdown parser if set
-        if (this.options && this.options.markdown) {
+        if (this.options?.markdown) {
             message = this.options.markdown(message)
         }
 

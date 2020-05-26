@@ -13,8 +13,6 @@ export class NotificationsQueue {
      */
     public items: Notification[] = []
 
-    public constructor() {}
-
     /**
      * Pushes a new notification into the store.
      *
