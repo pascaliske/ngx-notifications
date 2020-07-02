@@ -44,7 +44,7 @@
     "@angular/router": "^9.1.9",
     "@pascaliske/html-helpers": "^1.5.8",
     "core-js": "^3.6.5",
-    "rxjs": "^6.5.5",
+    "rxjs": "^6.6.0",
     "schematics-utilities": "^2.0.1",
     "tslib": "^1.13.0",
     "uuid": "^8.2.0",
