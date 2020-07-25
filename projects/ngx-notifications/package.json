@@ -20,6 +20,7 @@
   },
   "schematics": "./schematics/collection.json",
   "dependencies": {
+    "tslib": "^2.0.0",
     "uuid": "^3.3.2"
   },
   "peerDependencies": {
