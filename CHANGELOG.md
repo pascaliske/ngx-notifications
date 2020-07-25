@@ -1,3 +1,12 @@
+# [1.5.0](https://github.com/pascaliske/ngx-notifications/compare/v1.4.3...v1.5.0) (2020-07-25)
+
+
+### Features
+
+* upgrade angular to v10 ([8c62c36](https://github.com/pascaliske/ngx-notifications/commit/8c62c365e4a21fc719d4287bc579cb6101eac890))
+
+
+
 ## [1.4.3](https://github.com/pascaliske/ngx-notifications/compare/v1.4.2...v1.4.3) (2020-05-26)
 
 
