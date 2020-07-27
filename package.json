@@ -47,7 +47,7 @@
     "rxjs": "^6.6.0",
     "schematics-utilities": "^2.0.1",
     "tslib": "^2.0.0",
-    "uuid": "^8.2.0",
+    "uuid": "^8.3.0",
     "zone.js": "~0.10.3"
   },
   "devDependencies": {
