@@ -119,7 +119,7 @@
     rxjs "6.5.5"
     source-map "0.7.3"
 
-"@angular-devkit/core@8.3.29", "@angular-devkit/core@^8.3.21":
+"@angular-devkit/core@8.3.29", "@angular-devkit/core@^8.3.8":
   version "8.3.29"
   resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-8.3.29.tgz#3477edd6458653f83e6d78684b100c1bef81382f"
   integrity sha512-4jdja9QPwR6XG14ZSunyyOWT3nE2WtZC5IMDIBZADxujXvhzOU0n4oWpy6/JVHLUAxYNNgzLz+/LQORRWndcPg==
@@ -139,7 +139,7 @@
     ora "4.0.4"
     rxjs "6.5.5"
 
-"@angular-devkit/schematics@8.3.29", "@angular-devkit/schematics@^8.3.21":
+"@angular-devkit/schematics@8.3.29", "@angular-devkit/schematics@^8.3.8":
   version "8.3.29"
   resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-8.3.29.tgz#b3ba658b90fb3226a80ff12977be7dd583e99c49"
   integrity sha512-AFJ9EK0XbcNlO5Dm9vr0OlBo1Nw6AaFXPR+DmHGBdcDDHxqEmYYLWfT+JU/8U2YFIdgrtlwvdtf6UQ3V2jdz1g==
@@ -1320,7 +1320,7 @@
     "@angular-devkit/core" "10.0.5"
     "@angular-devkit/schematics" "10.0.5"
 
-"@schematics/angular@^8.3.21":
+"@schematics/angular@^8.3.8":
   version "8.3.29"
   resolved "https://registry.yarnpkg.com/@schematics/angular/-/angular-8.3.29.tgz#da747539230dae16111c56422339c02dbb17681d"
   integrity sha512-If+UhCsQzCgnQymiiF8dQRoic34+RgJ6rV0n4k7Tm4N2xNYJOG7ajjzKM7PIeafsF50FKnFP8dqaNGxCMyq5Ew==
@@ -1343,7 +1343,7 @@
     semver "7.3.2"
     semver-intersect "1.4.0"
 
-"@schematics/update@^0.803.21":
+"@schematics/update@^0.803.8":
   version "0.803.29"
   resolved "https://registry.yarnpkg.com/@schematics/update/-/update-0.803.29.tgz#ad3c9bfe8c6d877a0ea692ae4760f0d72f3e0cc9"
   integrity sha512-Syf6h6DYeu1WU9aLihMwIgVASpcHCxUYqhZyHfQABiK8NkdlZ+KAp4cOxihsZyDqIJNLWON+0/FLPAQF3BXh5Q==
@@ -8620,15 +8620,15 @@ schema-utils@^2.6.1, schema-utils@^2.6.4, schema-utils@^2.6.5, schema-utils@^2.6
     ajv "^6.12.2"
     ajv-keywords "^3.4.1"
 
-schematics-utilities@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/schematics-utilities/-/schematics-utilities-2.0.1.tgz#c763ee078b27d41540a455f3def8f3900edb5d9d"
-  integrity sha512-8tOOrWfBLayBefH/9Gdj+4oZ9aO+joRy4sZeQQ1l/rEaPt+bdZchEgllTz5rz0L/nX0Q/vYUmKXZiPEt0LOiWg==
+schematics-utilities@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/schematics-utilities/-/schematics-utilities-2.0.2.tgz#8b6c45ff1c09a496dd9f9a163e64ec602d72ae7d"
+  integrity sha512-rf9kf76c7LvfeHGAJJNjfYeVEf8kIpaTSU4e931MohjX/o1E+sxuBAD/rIwTKE5wmcRcuRrFCuGb9jcMUZ6eeg==
   dependencies:
-    "@angular-devkit/core" "^8.3.21"
-    "@angular-devkit/schematics" "^8.3.21"
-    "@schematics/angular" "^8.3.21"
-    "@schematics/update" "^0.803.21"
+    "@angular-devkit/core" "^8.3.8"
+    "@angular-devkit/schematics" "^8.3.8"
+    "@schematics/angular" "^8.3.8"
+    "@schematics/update" "^0.803.8"
     rxjs "^6.4.0"
     typescript "^3.6.3"
   optionalDependencies:
