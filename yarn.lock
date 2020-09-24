@@ -10,14 +10,6 @@
     "@angular-devkit/core" "10.0.8"
     rxjs "6.5.5"
 
-"@angular-devkit/architect@0.1001.1":
-  version "0.1001.1"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.1001.1.tgz#ec17baf535160199dd7497a931ea60b185d82bfc"
-  integrity sha512-2jRO7L/k9gNxHVJxPoUMVvtf/KzsSXNT7akbAbb8CkBJxjx3NC3Y9NssPD9E78kyiXogO6IvkwyalBGrWvOPBQ==
-  dependencies:
-    "@angular-devkit/core" "10.1.1"
-    rxjs "6.6.2"
-
 "@angular-devkit/architect@0.1001.3":
   version "0.1001.3"
   resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.1001.3.tgz#168aa424be9d0dad90d1a03129c3999fbf76a1cc"
@@ -97,12 +89,12 @@
     webpack-subresource-integrity "1.4.1"
     worker-plugin "4.0.3"
 
-"@angular-devkit/build-ng-packagr@~0.1001.1":
-  version "0.1001.1"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/build-ng-packagr/-/build-ng-packagr-0.1001.1.tgz#c200d780e8071ae42c481f525c4a5540bff845b5"
-  integrity sha512-KX5GuQvQypUpR+qF9qHzNC49GrHx6wsu+AoIily72xTU7+gri0pO2KxQ6aSQiGRENHtvfKYOxMUoeZUvlD2sBA==
+"@angular-devkit/build-ng-packagr@~0.1001.3":
+  version "0.1001.3"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/build-ng-packagr/-/build-ng-packagr-0.1001.3.tgz#7af1d9d940a802323807dcf548f7247f82bbe8c7"
+  integrity sha512-nw3UEhd2FNyyH110J7xgUIQ3l4jAg47XMBZV81fRfKtZudYy+bctblIPGF0erwPQ0kKY8n+h36j9+BKh0QbkvA==
   dependencies:
-    "@angular-devkit/architect" "0.1001.1"
+    "@angular-devkit/architect" "0.1001.3"
     rxjs "6.6.2"
 
 "@angular-devkit/build-optimizer@0.1000.8":
@@ -133,17 +125,6 @@
     fast-json-stable-stringify "2.1.0"
     magic-string "0.25.7"
     rxjs "6.5.5"
-    source-map "0.7.3"
-
-"@angular-devkit/core@10.1.1":
-  version "10.1.1"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-10.1.1.tgz#96e4f7af4ef17810f6ff87786c83841f466b4122"
-  integrity sha512-0ZmknL5I177JO+iOz2gDSqHtPK3zGGwyz4ix9IIu172eFRX53sdbl1vDiMikovyvZWx5fXqU3Vazf7CUeGA28w==
-  dependencies:
-    ajv "6.12.4"
-    fast-json-stable-stringify "2.1.0"
-    magic-string "0.25.7"
-    rxjs "6.6.2"
     source-map "0.7.3"
 
 "@angular-devkit/core@10.1.3":
