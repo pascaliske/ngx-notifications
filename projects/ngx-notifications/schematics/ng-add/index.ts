@@ -7,6 +7,8 @@ import {
     getWorkspace,
     getProjectFromWorkspace,
     addModuleImportToRootModule,
+    WorkspaceProject,
+    ProjectType,
 } from 'schematics-utilities'
 
 function addPackageJsonDependencies(): Rule {
@@ -40,7 +42,12 @@ function addModuleToImports(): Rule {
         const workspace = getWorkspace(host)
         const project = getProjectFromWorkspace(workspace, Object.keys(workspace['projects'])[0])
 
-        addModuleImportToRootModule(host, moduleName, '@pascaliske/ngx-notifications', project)
+        addModuleImportToRootModule(
+            host,
+            moduleName,
+            '@pascaliske/ngx-notifications',
+            project as WorkspaceProject<ProjectType.Application>,
+        )
 
         return host
     }
@@ -49,7 +56,7 @@ function addModuleToImports(): Rule {
 /**
  * Adds the library to an existing angular project.
  */
-export default function(): Rule {
+export default function (): Rule {
     return chain([
         addPackageJsonDependencies(),
         installPackageJsonDependencies(),
