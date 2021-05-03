@@ -1,6 +1,6 @@
 # `@pascaliske/ngx-notifications`
 
-[![npm (scoped)](https://img.shields.io/npm/v/@pascaliske/ngx-notifications.svg?style=flat-square)](https://www.npmjs.com/package/@pascaliske/ngx-notifications) [![GitHub Tag](https://img.shields.io/github/tag/pascaliske/ngx-notifications.svg?style=flat-square)](https://github.com/pascaliske/ngx-notifications) [![Travis CI](https://img.shields.io/travis/com/pascaliske/ngx-notifications/master.svg?style=flat-square)](https://travis-ci.com/pascaliske/ngx-notifications) [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=pascaliske/ngx-notifications)](https://dependabot.com) [![Awesome Badges](https://img.shields.io/badge/badges-awesome-green.svg?style=flat-square)](https://github.com/Naereen/badges)
+[![npm (scoped)](https://img.shields.io/npm/v/@pascaliske/ngx-notifications.svg?style=flat-square)](https://www.npmjs.com/package/@pascaliske/ngx-notifications) [![GitHub Tag](https://img.shields.io/github/tag/pascaliske/ngx-notifications.svg?style=flat-square)](https://github.com/pascaliske/ngx-notifications) [![Build Status](https://img.shields.io/github/workflow/status/pascaliske/ngx-notifications/Build%20package/master?label=build&style=flat-square)](https://github.com/pascaliske/ngx-notifications/actions) [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=pascaliske/ngx-notifications)](https://dependabot.com) [![Awesome Badges](https://img.shields.io/badge/badges-awesome-green.svg?style=flat-square)](https://github.com/Naereen/badges)
 
 ## Installation
 
@@ -85,4 +85,4 @@ $ ng add @pascaliske/ngx-notifications
 
 ## License
 
-MIT © [Pascal Iske](https://pascal-iske.de)
+MIT © [Pascal Iske](https://pascaliske.dev)

@@ -1,12 +1,12 @@
 {
   "name": "@pascaliske/ngx-notifications",
   "description": "Notification module for Angular v6+.",
-  "version": "1.5.2",
+  "version": "2.0.0",
   "license": "MIT",
   "author": {
     "name": "Pascal Iske",
-    "email": "info@pascal-iske.de",
-    "url": "https://pascal-iske.de"
+    "email": "info@pascaliske.dev",
+    "url": "https://pascaliske.dev"
   },
   "repository": {
     "url": "https://github.com/pascaliske/ngx-notifications.git",
@@ -24,8 +24,8 @@
     "uuid": "^3.3.2"
   },
   "peerDependencies": {
-    "@angular/common": "^8.0.0 || ^9.0.0 || ^10.0.0",
-    "@angular/core": "^8.0.0 || ^9.0.0 || ^10.0.0",
+    "@angular/common": "^9.0.0 || ^10.0.0 || ^11.0.0",
+    "@angular/core": "^9.0.0 || ^10.0.0 || ^11.0.0",
     "@pascaliske/html-helpers": "^1.2.1",
     "rxjs": "^6.0.0"
   }
