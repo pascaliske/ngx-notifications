@@ -1,3 +1,12 @@
+## [2.0.1](https://github.com/pascaliske/ngx-notifications/compare/v2.0.0...v2.0.1) (2021-05-03)
+
+
+### Bug Fixes
+
+* **schematics:** fix typing issue ([aceeafa](https://github.com/pascaliske/ngx-notifications/commit/aceeafa87ab3122f4a40e9ae97969e99c603f2bf))
+
+
+
 # [2.0.0](https://github.com/pascaliske/ngx-notifications/compare/v1.5.2...v2.0.0) (2021-05-03)
 
 
