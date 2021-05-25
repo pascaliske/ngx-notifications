@@ -1,8 +1,12 @@
 {
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
   "dest": "../../dist/ngx-notifications",
-  "whitelistedNonPeerDependencies": ["uuid"],
+  "allowedNonPeerDependencies": ["uuid"],
   "lib": {
-    "entryFile": "src/exports.ts"
+    "entryFile": "src/exports.ts",
+    "umdModuleIds": {
+      "@pascaliske/html-helpers": "htmlHelpers",
+      "uuid": "uuid"
+    }
   }
 }
