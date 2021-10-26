@@ -1801,10 +1801,10 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.5.tgz#dcce4430e64b443ba8945f0290fb564ad5bac6dd"
   integrity sha512-7+2BITlgjgDhH0vvwZU/HZJVyk+2XUlvxXe8dFMedNX/aMkaOq++rMAFXc0tM7ij15QaWlbdQASBR9dihi+bDQ==
 
-"@types/marked@^2.0.3":
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/@types/marked/-/marked-2.0.3.tgz#c8ea93684e530cc3b667d3e7226556dd0844ad1f"
-  integrity sha512-lbhSN1rht/tQ+dSWxawCzGgTfxe9DB31iLgiT1ZVT5lshpam/nyOA1m3tKHRoNPctB2ukSL22JZI5Fr+WI/zYg==
+"@types/marked@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@types/marked/-/marked-3.0.2.tgz#4a639575542ae7715fabbe450b08118e9093eb35"
+  integrity sha512-mGYI9qFs+i5eYaytWKBbtEMbIkrXGKuhsDpDcj70ogKS2gk1NmgEy9Z3VEKz922Lfms6eITXXqv5idlX7C/irw==
 
 "@types/minimatch@*":
   version "3.0.3"
