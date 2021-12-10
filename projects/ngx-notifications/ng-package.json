@@ -4,10 +4,6 @@
   "deleteDestPath": false,
   "allowedNonPeerDependencies": ["uuid"],
   "lib": {
-    "entryFile": "src/exports.ts",
-    "umdModuleIds": {
-      "@pascaliske/html-helpers": "htmlHelpers",
-      "uuid": "uuid"
-    }
+    "entryFile": "src/exports.ts"
   }
 }
