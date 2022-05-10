@@ -64,7 +64,7 @@
     "@types/node": "^17.0.31",
     "@types/uuid": "^8.3.4",
     "codelyzer": "^6.0.2",
-    "husky": "^8.0.0",
+    "husky": "^8.0.1",
     "lint-staged": "^12.4.1",
     "marked": "^4.0.15",
     "ng-packagr": "^13.3.1",
