@@ -1,3 +1,7 @@
+## [2.1.2](https://github.com/pascaliske/ngx-notifications/compare/v2.1.1...v2.1.2) (2022-05-27)
+
+
+
 ## [2.1.1](https://github.com/pascaliske/ngx-notifications/compare/v2.1.0...v2.1.1) (2022-05-27)
 
 
