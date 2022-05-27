@@ -26,7 +26,6 @@
     "copy:readme": "cp README.md dist/ngx-notifications/README.md",
     "copy:license": "cp LICENSE.md dist/ngx-notifications/LICENSE.md",
     "copy:collection": "cp projects/ngx-notifications/schematics/collection.json dist/ngx-notifications/schematics/collection.json",
-    "lint": "ng lint",
     "format": "prettier --write \"{src,projects}/**/*.{ts,html,scss,json}\"",
     "version": "bump --yes package.json projects/ngx-notifications/package.json",
     "changelog": "standard-changelog",
