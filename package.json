@@ -60,7 +60,7 @@
     "@pascaliske/prettier-config": "^1.2.0",
     "@rstacruz/bump-cli": "^2.0.1",
     "@types/marked": "^4.0.6",
-    "@types/node": "^18.7.11",
+    "@types/node": "^18.7.13",
     "@types/uuid": "^8.3.4",
     "codelyzer": "^6.0.2",
     "husky": "^8.0.1",
