@@ -1,3 +1,31 @@
+# [3.0.0](https://github.com/pascaliske/ngx-notifications/compare/v2.1.3...v3.0.0) (2025-04-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency uuid to v9 ([b7499eb](https://github.com/pascaliske/ngx-notifications/commit/b7499ebee4246edaefc6b470369067cd8ee2b89b))
+* **deps:** update dependency zone.js to ~0.12.0 ([ee2d4d6](https://github.com/pascaliske/ngx-notifications/commit/ee2d4d63fa12b2d0f8e6eb0d02857035795f8a96))
+* **deps:** update dependency zone.js to ~0.13.0 ([6a35388](https://github.com/pascaliske/ngx-notifications/commit/6a353889d20a161817a6c9950c994684708ebc96))
+
+
+### Features
+
+* migrate to a provider function based library ([7163979](https://github.com/pascaliske/ngx-notifications/commit/71639799b3f349f9c260ff9fc242e1cbad45f229))
+* rename options token in preparation for provider based library ([7a67964](https://github.com/pascaliske/ngx-notifications/commit/7a679646cb3f6ac066b81c1ed41bcac719a2b6ba))
+* upgrade angular to v19 ([64bfeb2](https://github.com/pascaliske/ngx-notifications/commit/64bfeb2f2074b055e8dab8870f519c28a441abf9))
+
+
+### BREAKING CHANGES
+
+* The bootstrap process of this library changed from a
+module based one to a provider function based one. Replace calls to
+`NotificationsModule.forRoot()` with `provideNotifications()`.
+* In preparation for a standalone compatible library the
+options token interface was renamed from `ModuleOptions` to
+`NotificationsOptions`.
+
+
+
 ## [2.1.3](https://github.com/pascaliske/ngx-notifications/compare/v2.1.2...v2.1.3) (2022-05-27)
 
 
