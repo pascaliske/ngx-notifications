@@ -15,6 +15,7 @@ import { Notification } from './notification'
     templateUrl: './notification.component.html',
     styleUrls: ['./notification.component.scss'],
     encapsulation: ViewEncapsulation.None,
+    standalone: false,
 })
 export class NotificationComponent {
     /**

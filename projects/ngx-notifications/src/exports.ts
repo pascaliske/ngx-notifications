@@ -1,8 +1,8 @@
 /**
  * Public API Surface
  */
-export * from './lib/notifications.module'
-export * from './lib/notifications.component'
-export * from './lib/notifications.service'
-export * from './lib/notification'
-export { ModuleOptions } from './lib/tokens'
+export { ModuleOptions, OPTIONS } from './lib/tokens'
+export { NotificationsModule } from './lib/notifications.module'
+export { NotificationsComponent } from './lib/notifications.component'
+export { NotificationsService } from './lib/notifications.service'
+export { NotificationType, NotificationOptions } from './lib/notification'

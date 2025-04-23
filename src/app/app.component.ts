@@ -4,7 +4,6 @@ import { NotificationsService, NotificationOptions } from '@pascaliske/ngx-notif
 @Component({
     selector: 'cmp-root',
     templateUrl: './app.component.html',
-    styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
     public constructor(private notificationService: NotificationsService) {}
