@@ -17,8 +17,7 @@
   },
   "private": true,
   "scripts": {
-    "ng": "ng",
-    "prepare": "husky install",
+    "prepare": "husky",
     "start": "ng serve ngx-notifications-demo",
     "build": "run-s build:lib build:schematics copy:readme copy:license copy:collection",
     "build:lib": "ng build ngx-notifications --configuration production",
