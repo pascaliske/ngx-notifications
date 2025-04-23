@@ -32,6 +32,7 @@
     "link": "yarn run build && cd dist/ngx-notifications && yarn link",
     "unlink": "cd dist/ngx-notifications && yarn unlink"
   },
+  "packageManager": "yarn@1.22.22",
   "prettier": "@pascaliske/prettier-config",
   "dependencies": {
     "@angular/animations": "^13.3.10",
