@@ -6,12 +6,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # checkout
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       # prepare
-      - uses: actions/setup-node@v3.6.0
+      - uses: actions/setup-node@v4.2.0
         with:
-          node-version: '16'
+          node-version: '22'
           registry-url: 'https://registry.npmjs.org'
       - run: yarn install --frozen-lockfile
 
