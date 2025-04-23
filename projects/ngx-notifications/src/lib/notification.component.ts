@@ -7,7 +7,7 @@ import {
     HostBinding,
 } from '@angular/core'
 import { modifiers } from '@pascaliske/html-helpers'
-import { ModuleOptions, OPTIONS } from './tokens'
+import { NotificationsOptions, OPTIONS } from './tokens'
 import { Notification } from './notification'
 
 @Component({
@@ -24,7 +24,7 @@ export class NotificationComponent {
     @Input()
     public data: Notification
 
-    public constructor(@Inject(OPTIONS) private options: ModuleOptions) {}
+    public constructor(@Inject(OPTIONS) private options: NotificationsOptions) {}
 
     /**
      * Triggers a dismiss event.

@@ -1,5 +1,5 @@
 import { Injectable, Inject } from '@angular/core'
-import { ModuleOptions, OPTIONS } from './tokens'
+import { NotificationsOptions, OPTIONS } from './tokens'
 import { NotificationsQueue } from './notifications.queue'
 import { Notification, NotificationType, NotificationOptions } from './notification'
 
@@ -8,7 +8,7 @@ import { Notification, NotificationType, NotificationOptions } from './notificat
 })
 export class NotificationsService {
     public constructor(
-        @Inject(OPTIONS) private options: ModuleOptions,
+        @Inject(OPTIONS) private options: NotificationsOptions,
         private queue: NotificationsQueue,
     ) {}
 

@@ -2,7 +2,7 @@ import { NgModule, ModuleWithProviders } from '@angular/core'
 import { CommonModule } from '@angular/common'
 import { NotificationsComponent } from './notifications.component'
 import { NotificationComponent } from './notification.component'
-import { ModuleOptions, OPTIONS } from './tokens'
+import { NotificationsOptions, OPTIONS } from './tokens'
 
 @NgModule({
     imports: [CommonModule],
@@ -16,7 +16,9 @@ export class NotificationsModule {
      * @param - The module options
      * @returns - The module with all providers
      */
-    public static forRoot(options?: ModuleOptions): ModuleWithProviders<NotificationsModule> {
+    public static forRoot(
+        options?: NotificationsOptions,
+    ): ModuleWithProviders<NotificationsModule> {
         return {
             ngModule: NotificationsModule,
             providers: [
