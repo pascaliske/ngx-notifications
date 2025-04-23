@@ -1,6 +1,6 @@
 import type { ApplicationConfig } from '@angular/core'
-import { provideExperimentalZonelessChangeDetection, importProvidersFrom } from '@angular/core'
-import { NotificationsModule } from '@pascaliske/ngx-notifications'
+import { provideExperimentalZonelessChangeDetection } from '@angular/core'
+import { provideNotifications } from '@pascaliske/ngx-notifications'
 import { parse } from 'marked'
 
 export function markdown(src: string): string {
@@ -10,14 +10,12 @@ export function markdown(src: string): string {
 export const appConfig: ApplicationConfig = {
     providers: [
         provideExperimentalZonelessChangeDetection(),
-        importProvidersFrom(
-            NotificationsModule.forRoot({
-                markdown,
-                labels: {
-                    info: 'INFO',
-                    error: 'ERROR',
-                },
-            }),
-        ),
+        provideNotifications({
+            markdown,
+            labels: {
+                info: 'INFO',
+                error: 'ERROR',
+            },
+        }),
     ],
 }

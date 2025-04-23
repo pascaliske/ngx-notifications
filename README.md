@@ -12,21 +12,18 @@ $ ng add @pascaliske/ngx-notifications
 
 ## Usage
 
-1. Import the module into your `AppModule`:
+1. Import the `provideNotifications()` function in your application configuration file.:
 
     ```typescript
-    import { NgModule } from '@angular/core'
-    import { BrowserModule } from '@angular/platform-browser'
-    import { NotificationsModule } from '@pascaliske/ngx-notifications'
-    import { AppComponent } from './app.component'
+    import type { ApplicationConfig } from '@angular/core'
+    import { provideNotifications } from '@pascaliske/ngx-notifications'
 
-    @NgModule({
-        bootstrap: [AppComponent],
-        declarations: [AppComponent],
-        imports: [BrowserModule, NotificationsModule.forRoot()],
-        providers: [],
-    })
-    export class AppModule {}
+    export const appConfig: ApplicationConfig = {
+        providers: [
+            provideExperimentalZonelessChangeDetection(),
+            provideNotifications(),
+        ],
+    }
     ```
 
 2. Add the following line to your app's template:

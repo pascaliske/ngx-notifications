@@ -1,9 +1,11 @@
 import { Component } from '@angular/core'
-import { NotificationsService, NotificationOptions } from '@pascaliske/ngx-notifications'
+import type { NotificationOptions } from '@pascaliske/ngx-notifications'
+import { NotificationsComponent, NotificationsService } from '@pascaliske/ngx-notifications'
 
 @Component({
     selector: 'cmp-root',
     templateUrl: './app.component.html',
+    imports: [NotificationsComponent],
 })
 export class AppComponent {
     public constructor(private notificationService: NotificationsService) {}
