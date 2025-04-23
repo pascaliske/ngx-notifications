@@ -21,7 +21,7 @@
   "schematics": "./schematics/collection.json",
   "dependencies": {
     "tslib": "^2.0.0",
-    "uuid": "^9.0.0"
+    "uuid": "^11.0.0"
   },
   "peerDependencies": {
     "@angular/common": "^17.0.0 || ^18.0.0 || ^19.0.0",
