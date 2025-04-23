@@ -1,12 +1,16 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base", ":preserveSemverRanges", ":disableRateLimiting"],
+  "extends": [
+    "config:recommended",
+    ":preserveSemverRanges",
+    ":disableRateLimiting"
+  ],
   "assigneesFromCodeOwners": true,
   "labels": ["dependencies"],
   "packageRules": [
     {
-      "matchPackagePatterns": ["commitlint"],
-      "groupName": "commitlint"
+      "groupName": "commitlint",
+      "matchPackageNames": ["/commitlint/"]
     }
   ]
 }
