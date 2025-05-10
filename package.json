@@ -62,7 +62,7 @@
     "@types/uuid": "^10.0.0",
     "codelyzer": "^6.0.2",
     "husky": "^9.1.7",
-    "lint-staged": "^15.5.1",
+    "lint-staged": "^16.0.0",
     "marked": "^15.0.9",
     "ng-packagr": "^19.2.2",
     "npm-run-all2": "^7.0.0",
