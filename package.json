@@ -50,8 +50,8 @@
     "uuid": "^11.1.0"
   },
   "devDependencies": {
-    "@angular/build": "^19.2.8",
-    "@angular/cli": "^19.2.8",
+    "@angular/build": "^20.0.0",
+    "@angular/cli": "^20.0.0",
     "@angular/compiler-cli": "^19.2.7",
     "@angular/language-service": "^19.2.7",
     "@commitlint/cli": "^19.8.0",
