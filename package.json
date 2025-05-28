@@ -64,7 +64,7 @@
     "husky": "^9.1.7",
     "lint-staged": "^16.0.0",
     "marked": "^15.0.9",
-    "ng-packagr": "^19.2.2",
+    "ng-packagr": "^20.0.0",
     "npm-run-all2": "^8.0.0",
     "prettier": "^3.5.3",
     "rxjs-tslint-rules": "^4.34.8",
