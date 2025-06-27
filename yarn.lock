@@ -4023,10 +4023,10 @@ make-fetch-happen@^5.0.0:
     socks-proxy-agent "^4.0.0"
     ssri "^6.0.0"
 
-marked@^15.0.9:
-  version "15.0.9"
-  resolved "https://registry.yarnpkg.com/marked/-/marked-15.0.9.tgz#0ac0b42834a04f8c971a2fee36106694b29c0aad"
-  integrity sha512-9AW/bn9DxQeZVjR52l5jsc0W2pwuhP04QaQewPvylil12Cfr2GBfWmgp6mu8i9Jy8UlBjqDZ9uMTDuJ8QOGZJA==
+marked@^16.0.0:
+  version "16.0.0"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-16.0.0.tgz#0c48e79782f26224f8ce34878644d8c320ad599f"
+  integrity sha512-MUKMXDjsD/eptB7GPzxo4xcnLS6oo7/RHimUMHEDRhUooPwmN9BEpMl7AEOJv3bmso169wHI2wUF9VQgL7zfmA==
 
 memorystream@^0.3.1:
   version "0.3.1"
