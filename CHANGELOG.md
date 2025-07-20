@@ -1,3 +1,18 @@
+## [3.0.1](https://github.com/pascaliske/ngx-notifications/compare/v3.0.0...v3.0.1) (2025-07-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency uuid to v11 ([47bc285](https://github.com/pascaliske/ngx-notifications/commit/47bc285))
+* make notification options optional ([f7100d3](https://github.com/pascaliske/ngx-notifications/commit/f7100d3))
+
+
+### Features
+
+* upgrade angular to v20 ([d7816fd](https://github.com/pascaliske/ngx-notifications/commit/d7816fd))
+
+
+
 # [3.0.0](https://github.com/pascaliske/ngx-notifications/compare/v2.1.3...v3.0.0) (2025-04-23)
 
 
