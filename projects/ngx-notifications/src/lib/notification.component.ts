@@ -6,7 +6,6 @@ import {
     HostListener,
     HostBinding,
 } from '@angular/core'
-import { NgIf } from '@angular/common'
 import { modifiers } from '@pascaliske/html-helpers'
 import { NotificationsOptions, OPTIONS } from './tokens'
 import { Notification } from './notification'
@@ -16,7 +15,6 @@ import { Notification } from './notification'
     templateUrl: './notification.component.html',
     styleUrls: ['./notification.component.scss'],
     encapsulation: ViewEncapsulation.None,
-    imports: [NgIf],
 })
 export class NotificationComponent {
     /**

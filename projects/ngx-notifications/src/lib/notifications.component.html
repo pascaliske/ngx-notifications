@@ -1,1 +1,3 @@
-<cmp-notification [data]="item" *ngFor="let item of queue.items"></cmp-notification>
+@for (item of queue.items; track item) {
+    <cmp-notification [data]="item"></cmp-notification>
+}

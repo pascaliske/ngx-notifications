@@ -1,5 +1,4 @@
 import { Component } from '@angular/core'
-import { NgFor } from '@angular/common'
 import { NotificationsQueue } from './notifications.queue'
 import { NotificationComponent } from './notification.component'
 
@@ -7,7 +6,7 @@ import { NotificationComponent } from './notification.component'
     selector: 'cmp-notifications',
     templateUrl: './notifications.component.html',
     styleUrls: ['./notifications.component.scss'],
-    imports: [NgFor, NotificationComponent],
+    imports: [NotificationComponent],
 })
 export class NotificationsComponent {
     public constructor(public queue: NotificationsQueue) {}

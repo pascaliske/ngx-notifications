@@ -1,5 +1,5 @@
 import type { ApplicationConfig } from '@angular/core'
-import { provideExperimentalZonelessChangeDetection } from '@angular/core'
+import { provideZonelessChangeDetection } from '@angular/core'
 import { provideNotifications } from '@pascaliske/ngx-notifications'
 import { parse } from 'marked'
 
@@ -9,7 +9,7 @@ export function markdown(src: string): string {
 
 export const appConfig: ApplicationConfig = {
     providers: [
-        provideExperimentalZonelessChangeDetection(),
+        provideZonelessChangeDetection(),
         provideNotifications({
             markdown,
             labels: {
