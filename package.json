@@ -59,7 +59,7 @@
     "@pascaliske/prettier-config": "^1.3.0",
     "@rstacruz/bump-cli": "^2.0.1",
     "@types/node": "^24.0.15",
-    "@types/uuid": "^10.0.0",
+    "@types/uuid": "^11.0.0",
     "codelyzer": "^6.0.2",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.2",
