@@ -1,3 +1,17 @@
+## [3.0.2](https://github.com/pascaliske/ngx-notifications/compare/v3.0.1...v3.0.2) (2025-12-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency uuid to v13 ([dc88caa](https://github.com/pascaliske/ngx-notifications/commit/dc88caa))
+
+
+### Features
+
+* upgrade angular to v21 ([e504366](https://github.com/pascaliske/ngx-notifications/commit/e504366))
+
+
+
 ## [3.0.1](https://github.com/pascaliske/ngx-notifications/compare/v3.0.0...v3.0.1) (2025-07-20)
 
 
